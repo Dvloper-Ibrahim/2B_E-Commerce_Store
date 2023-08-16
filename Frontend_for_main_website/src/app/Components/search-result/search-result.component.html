@@ -1,0 +1,92 @@
+<div class="container mx-auto">
+  <div class="row mx-auto">
+    <!-- *********************************************************** -->
+
+    <!-- Sidebar Menu -->
+  
+      <!-- *********************************************************** -->
+
+      <div class="container col-lg-10 col-md-12 col-sm-12 mx-auto">
+
+        <div class="container mx-auto">
+
+            <!-- Products Display -->
+  <div class="container d-flex justify-content-center mx-auto" >
+    <div class="row" *ngIf="searchedProds.length > 0">
+        <h3>{{"Search Results:" | translate}}</h3>
+
+      <div class="product col-lg-3 col-md-4 col-sm-6 col-6 mb-2 mt-2" *ngFor="let product of searchedProds" >
+        <!-- ********************************************* -->
+             <div class="product-card" >
+
+              <ng-container *ngIf="product.discount">
+                <div class="product-discount row mx-left p-0 m-0">
+                  <p>{{ product.discount | formatDiscount }}</p>
+                </div>             
+               </ng-container>
+
+                 <div class="product-photo mb-2" >
+                  <img [src]="product.image" class="card-img-top" alt="Product Image" />
+                 </div>
+                 
+                 <div class="product-description">
+                  <p >{{ product.description}}</p>
+                 </div>
+
+                 <div class="product-name mx-auto" (click)="prodDetails(product.id)">
+                  <p >{{ product.name}}</p>
+                 </div>
+
+               <div class="product-rating mx-auto">
+                <ng-container *ngIf="product.rating !== undefined; else noRating">
+                  <ng-container *ngFor="let star of getColoredStars(product.rating)">
+                    <span class="star" [class.filled]="star === 1">&#9733;</span>
+                  </ng-container>
+                </ng-container>
+                <ng-template #noRating>
+                  <ng-container *ngFor="let star of getColoredStars(0)">
+                    <span class="star">&#9733;</span>
+                  </ng-container>
+                </ng-template>
+              </div> 
+
+              <div class="product-price mx-auto row">
+                <!-- THERE IS  DISCOUNT -->
+                <ng-container *ngIf="product.discount; else originalPrice">
+                  <p class="text-center mb-2">
+                    <del><span class="oldPrice">{{ product.price | currency : "EGP" }}</span></del>
+                    <span class="newPrice">{{ (product.price * ((100-product.discount)*0.01)) | currency : "EGP" }}</span>
+                  </p>
+                </ng-container>
+                
+                <!-- THERE IS NO DISCOUNT -->
+                <ng-template #originalPrice>
+                  <p class="text-center mb-2">
+                    <span class="boldSmall">{{ product.price | currency : "EGP" }}</span>
+                  </p>
+                </ng-template>
+ 
+              <div class="button-cart mx-auto row">
+                <div class="btn-side1 col-2"><i class="fa-solid fa-heart-pulse" ></i></div>
+                <button (click)="addToCart(product)" type="button" class="btn btn-primary mt-auto col-8">
+                  <span><i class="fa-solid fa-cart-plus"></i> ADD TO CART</span>
+                </button>
+                <div class="btn-side2 col-2"><i class="fa-solid fa-signal" ></i></div>
+              </div>
+             </div>
+        <!-- ********************************************* -->
+      </div>
+    </div>
+  </div>
+  <div *ngIf="searchedProds.length === 0" >
+    <div class="container-fluid p-50  mx-auto" style="width:max-content;border: none;">
+    <p style="color: red; font-size: xx-large;font-weight: bolder;">{{"No Results Found" | translate}}</p>
+   </div>
+  </div>
+
+      </div>
+    </div>
+  
+</div>
+
+  </div>

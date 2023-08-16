@@ -1,0 +1,80 @@
+
+
+
+
+  <!-- Products Display -->
+  <div class="container d-flex justify-content-center mx-auto" >
+    <div class="row">
+      <div class="product col-lg-3 col-md-4 col-sm-6 col-6 mb-2 mt-2" *ngFor="let product of AllProduct" >
+        <!-- ********************************************* -->
+             <div class="product-card" >
+
+              <div class="product-discount">
+                <p>{{ product.discount | formatDiscount }}</p>
+              </div>
+
+                 <div class="product-photo mb-2">
+                  <img [src]="product.image" class="card-img-top" alt="Product Image" />
+                 </div>
+                 
+                 <div class="product-description">
+                  <p >{{ product.descriptionEN}}</p>
+                 </div>
+
+                 <div class="product-name mx-auto" (click)="prodDetails(product.id)">
+                  <p >{{ product.productNameEN}}</p>
+                 </div>
+
+               <div class="product-rating mx-auto">
+                <ng-container *ngIf="product.rating !== undefined; else noRating">
+                  <ng-container *ngFor="let star of getColoredStars(product.rating)">
+                    <span class="star" [class.filled]="star === 1">&#9733;</span>
+                  </ng-container>
+                </ng-container>
+                <ng-template #noRating>
+                  <ng-container *ngFor="let star of getColoredStars(0)">
+                    <span class="star">&#9733;</span>
+                  </ng-container>
+                </ng-template>
+              </div> 
+
+              <div class="product-price mx-auto">
+                <p >{{ product.price | currency : "EGP" }}</p>
+              </div>
+
+
+              <div class="button-cart mx-auto row">
+                <div class="btn-side1 col-2" (click)="addToWishList(product)"><i class="fa-solid fa-heart-pulse" ></i></div>
+                <button (click)="addToCart(product)" type="button" class="btn btn-primary mt-auto col-8">
+                  <span><i class="fa-solid fa-cart-plus"></i> ADD TO CART</span>
+                </button>
+                <div class="btn-side2 col-2"><i class="fa-solid fa-signal" ></i></div>
+              </div>
+             </div>
+        <!-- ********************************************* -->
+      </div>
+    </div>
+  </div>
+
+
+  
+
+  
+  
+
+
+
+      
+      
+      
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

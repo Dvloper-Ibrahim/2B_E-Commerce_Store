@@ -1,0 +1,3 @@
+https://www.paypal.com/signin?returnUri=https%3A%2F%2Fdeveloper.paypal.com%2Fdashboard%2Fapplications%2Fsandbox&intent=developer&ctxId=ul24abb85ac7524770b43fd5fc5dee1524
+
+https://www.sandbox.paypal.com/us/home

@@ -1,0 +1,228 @@
+<div class="container">
+  <div class="create-account my-5">
+    <form
+      #createUserForm="ngForm"
+      (ngSubmit)="createUser()"
+      [appMatchPassword]="['password', 'confirmPassword']"
+    >
+      <h3 class="text-center mb-3">{{ "Create An Account" | translate }}</h3>
+      <div class="fullname d-block d-md-flex">
+        <div class="firstname mb-3 me-3">
+          <input
+            type="text"
+            class="form-control"
+            [placeholder]="'First Name' | translate"
+            id="firstName"
+            name="firstName"
+            required
+            [(ngModel)]="newUser.firstName"
+            #firstNameInput="ngModel"
+            [ngClass]="{
+              'is-invalid':
+                (firstNameInput.touched || firstNameInput.dirty) &&
+                firstNameInput.invalid
+            }"
+          />
+          <span class="invalid-feedback">
+            <span *ngIf="firstNameInput.errors?.['required']">{{
+              "Please, enter your first name" | translate
+            }}</span>
+          </span>
+        </div>
+        <div class="lastname mb-3">
+          <input
+            type="text"
+            class="form-control"
+            [placeholder]="'Last Name' | translate"
+            id="lastName"
+            name="lastName"
+            required
+            [(ngModel)]="newUser.lastName"
+            #lastNameInput="ngModel"
+            [ngClass]="{
+              'is-invalid':
+                (lastNameInput.touched || lastNameInput.dirty) &&
+                lastNameInput.invalid
+            }"
+          />
+          <span class="invalid-feedback">
+            <span *ngIf="lastNameInput.errors?.['required']">{{
+              "Please, enter your last name" | translate
+            }}</span>
+          </span>
+        </div>
+      </div>
+      <div class="username mb-3">
+        <input
+          type="text"
+          class="form-control"
+          [placeholder]="'Userame' | translate"
+          id="userName"
+          name="userName"
+          required
+          appValidateUserName
+          [(ngModel)]="newUser.userName"
+          #userName
+          #userNameInput="ngModel"
+          [ngClass]="{
+            'is-invalid':
+              (userNameInput.touched || userNameInput.dirty) &&
+              userNameInput.invalid
+          }"
+        />
+        <span class="invalid-feedback">
+          <span *ngIf="userNameInput.errors?.['required']">{{
+            "Please, enter your username" | translate
+          }}</span>
+          <span *ngIf="userNameInput.errors?.['userNameExists']">{{
+            "Username is used, choose another one" | translate
+          }}</span>
+        </span>
+      </div>
+      <div class="email mb-3">
+        <input
+          type="email"
+          class="form-control"
+          [placeholder]="'Email' | translate"
+          id="email"
+          name="email"
+          required
+          pattern="^[A-Za-z]+\d*@([A-Za-z]+\.)+[A-Za-z]+$"
+          [(ngModel)]="newUser.email"
+          #emailInput="ngModel"
+          [ngClass]="{
+            'is-invalid':
+              (emailInput.touched || emailInput.dirty) && emailInput.invalid
+          }"
+        />
+        <span class="invalid-feedback">
+          <span *ngIf="emailInput.errors?.['required']">{{
+            "Please, enter your email address" | translate
+          }}</span>
+          <span *ngIf="emailInput.errors?.['pattern']">{{
+            "Invalid enail address" | translate
+          }}</span>
+        </span>
+      </div>
+      <div class="phone mb-3">
+        <input
+          type="text"
+          class="form-control"
+          [placeholder]="'Phone Number' | translate"
+          id="phoneNumber"
+          name="phoneNumber"
+          required
+          pattern="^\d{11}$"
+          [(ngModel)]="newUser.phoneNumber"
+          #phoneNumberInput="ngModel"
+          [ngClass]="{
+            'is-invalid':
+              (phoneNumberInput.touched || phoneNumberInput.dirty) &&
+              phoneNumberInput.invalid
+          }"
+        />
+        <span class="invalid-feedback">
+          <span *ngIf="phoneNumberInput.errors?.['required']">{{
+            "Please, enter your phone number" | translate
+          }}</span>
+          <span *ngIf="phoneNumberInput.errors?.['pattern']">{{
+            "Enter a phone number of 11 digits" | translate
+          }}</span>
+        </span>
+      </div>
+      <div class="password mb-3 position-relative">
+        <input
+          type="password"
+          class="form-control"
+          [placeholder]="'Password' | translate"
+          id="password"
+          name="password"
+          required
+          pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{8,}$"
+          [(ngModel)]="newUser.password"
+          #passwordInput="ngModel"
+          #passeord
+          [ngClass]="{
+            'is-invalid':
+              (passwordInput.touched || passwordInput.dirty) &&
+              passwordInput.invalid
+          }"
+        />
+        <span class="invalid-feedback">
+          <span *ngIf="passwordInput.errors?.['required']">{{
+            "Please, enter your password" | translate
+          }}</span>
+          <span *ngIf="passwordInput.errors?.['pattern']">{{
+            "password must contain at least 8 (capitals+smalls+numbers+ symbols) characters"
+              | translate
+          }}</span>
+        </span>
+        <i
+          class="bx bx-hide show-hide"
+          #passwrdButton
+          (click)="showAndHide(passwrdButton, passeord)"
+        ></i>
+      </div>
+      <div class="confirm-password mb-3 position-relative">
+        <input
+          type="password"
+          class="form-control"
+          [placeholder]="'Confirm Password' | translate"
+          id="confirmPassword"
+          name="confirmPassword"
+          required
+          [(ngModel)]="newUser.confirmPassword"
+          #confirmPasswordInput="ngModel"
+          #confirmPassword
+          [ngClass]="{
+            'is-invalid':
+              (confirmPasswordInput.touched || confirmPasswordInput.dirty) &&
+              confirmPasswordInput.invalid
+          }"
+        />
+        <span class="invalid-feedback">
+          <span *ngIf="confirmPasswordInput.errors?.['required']">{{
+            "Please, confirm your password" | translate
+          }}</span>
+          <span *ngIf="confirmPasswordInput.errors?.['passwordMismatch']">{{
+            "passwords don't match" | translate
+          }}</span>
+        </span>
+        <i
+          class="bx bx-hide show-hide"
+          #confirmPasswrdButton
+          (click)="showAndHide(confirmPasswrdButton, confirmPassword)"
+        ></i>
+      </div>
+      <div class="newsletter mb-5 d-flex">
+        <input
+          type="checkbox"
+          class="form-check-input"
+          id="newsletter"
+          name="signUpForNewsletter"
+          [(ngModel)]="newUser.signUpForNewsletter"
+        />
+        <label for="newsletter" class="form-check-label ms-3">{{
+          "Sign Up for Newsletter" | translate
+        }}</label>
+      </div>
+
+      <div
+        class="sign-or-have d-flex justify-content-between align-items-center flex-column flex-lg-row"
+      >
+        <button
+          [disabled]="createUserForm.invalid"
+          class="text-uppercase btn btn-success mb-2 mb-lg-0"
+        >
+          {{ "create an account" | translate }}
+        </button>
+        <span class="mb-2 mb-lg-0">{{
+          "Already Have Account?" | translate
+        }}</span>
+        <a href="sign-in" class="text-decoration-none">{{
+          "Sign In" | translate
+        }}</a>
+      </div>
+    </form>
+  </div>
+</div>

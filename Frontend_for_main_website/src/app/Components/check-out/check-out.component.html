@@ -1,0 +1,346 @@
+<div class="row"></div>
+
+<div class="row mx-auto m-2">
+  <div class="col-lg-6 col-md-6 col-sm-10 mx-auto mb-2">
+    <div class="container">
+      <div class="container mb-3">
+        <span style="font-size: large"
+          ><i
+            class="fa-regular fa-circle-check"
+            style="color: #ff6600; font-size: xx-large"
+          ></i
+          >&nbsp;Shipping</span
+        >
+        &nbsp;&nbsp;&nbsp;
+        <span
+          ><i class="fa-solid fa-angles-right" style="font-size: xx-large"></i
+        ></span>
+        &nbsp;&nbsp;&nbsp;
+        <span style="color: #e4e4e4; font-size: large"
+          ><i
+            class="fa-regular fa-circle-check"
+            style="color: #dad6d6; font-size: xx-large"
+          ></i
+          >&nbsp;Review & Payments</span
+        >
+      </div>
+      <h5>Shipping Address</h5>
+      <hr />
+      <form
+        name="signupForm"
+        #signupForm="ngForm"
+        (ngSubmit)="goToPaymentMethods()"
+      >
+        <!-- COUNTRY  -->
+        <div class="input-box mb-2">
+          <label for="country">Country</label><br />
+          <select
+            name="country"
+            id="country"
+            required
+            class="form-control"
+            #countryInput="ngModel"
+            [(ngModel)]="shipping.country"
+            [ngClass]="{
+              'is-invalid':
+                (countryInput.touched || countryInput.dirty) &&
+                countryInput.invalid
+            }"
+          >
+            <option value="0" disabled>Select Country</option>
+            <option value="Egypt">Egypt</option>
+          </select>
+          <span class="invalid-feedback">
+            <span *ngIf="countryInput.errors?.['required']"
+              >Please select your country</span
+            >
+          </span>
+        </div>
+        <!-- First Name  -->
+        <div class="input-box mb-2">
+          <label for="fullName">Full Name</label><br />
+          <input
+            type="text"
+            placeholder="Enter your full name"
+            #fullNameInput="ngModel"
+            required
+            name="fullName"
+            [(ngModel)]="shipping.fullName"
+            [ngClass]="{
+              'is-invalid':
+                (fullNameInput.touched || fullNameInput.dirty) &&
+                fullNameInput.invalid
+            }"
+            id="fullName"
+            class="form-control"
+          />
+          <span class="invalid-feedback">
+            <span *ngIf="fullNameInput.errors?.['required']"
+              >Please Enter your full name</span
+            >
+          </span>
+        </div>
+        <!-- Email -->
+        <div class="input-box mb-4">
+          <label for="email">E-mail</label><br />
+          <input
+            type="email"
+            placeholder="Enter your email"
+            required
+            name="email"
+            #emailInput="ngModel"
+            required
+            pattern="^[A-Za-z][A-Za-z.]*\d*@([A-Za-z]+\.)+[A-Za-z]+$"
+            [(ngModel)]="shipping.email"
+            [ngClass]="{
+              'is-invalid':
+                (emailInput.touched || emailInput.dirty) && emailInput.invalid
+            }"
+            id="email"
+            class="form-control"
+          />
+          <span class="invalid-feedback">
+            <span *ngIf="emailInput.errors?.['required']"
+              >Please Enter your E-mail</span
+            >
+            <span *ngIf="emailInput.errors?.['pattern']"
+              >Please enter a valid email address</span
+            >
+          </span>
+        </div>
+        <!-- phone number -->
+        <div class="row">
+          <div class="input-box mb-4">
+            <label for="phoneNumber">Phone Number</label><br />
+            <div class="input-group">
+              <input
+                type="text"
+                id="phoneNumber"
+                placeholder="Phone Number"
+                name="phoneNumber"
+                required
+                #phoneNumberInput="ngModel"
+                pattern="^\d{11}$"
+                [(ngModel)]="shipping.phoneNumber"
+                [ngClass]="{
+                  'is-invalid':
+                    (phoneNumberInput.touched || phoneNumberInput.dirty) &&
+                    phoneNumberInput.invalid
+                }"
+                id="phone"
+                class="form-control"
+              />
+              <span class="invalid-feedback">
+                <span *ngIf="phoneNumberInput.errors?.['required']"
+                  >Please enter a phone number</span
+                >
+                <span *ngIf="phoneNumberInput.errors?.['pattern']"
+                  >Please enter a valid phone number (numbers only)</span
+                >
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- ADDRESS  -->
+        <label>Address <span style="color: red">*</span></label>
+        <div class="input-box mb-4">
+          <label for="state">Select State/Province</label><br />
+          <select
+            id="state"
+            name="state"
+            class="form-control"
+            required
+            [(ngModel)]="shipping.state"
+            #stateInput="ngModel"
+            [ngClass]="{
+              'is-invalid':
+                (stateInput.touched || stateInput.dirty) && stateInput.invalid
+            }"
+          >
+            <option value="0" disabled style="color: hsl(0, 2%, 64%)">
+              Select a region State/Province
+            </option>
+            <option value="cairo">Cairo</option>
+            <option value="alexandria">Alexandria</option>
+            <option value="giza">Giza</option>
+            <option value="aswan">Aswan</option>
+            <option value="asyut">Asyut</option>
+            <option value="beheira">Beheira</option>
+            <option value="beni_suef">Beni Suef</option>
+            <option value="cairo">Cairo</option>
+            <option value="dakahlia">Dakahlia</option>
+            <option value="damietta">Damietta</option>
+            <option value="faiyum">Faiyum</option>
+            <option value="gharbia">Gharbia</option>
+            <option value="giza">Giza</option>
+            <option value="ismailia">Ismailia</option>
+            <option value="kafr_el_sheikh">Kafr El Sheikh</option>
+            <option value="luxor">Luxor</option>
+            <option value="matruh">Matruh</option>
+            <option value="minya">Minya</option>
+            <option value="monufia">Monufia</option>
+            <option value="new_valley">New Valley</option>
+            <option value="north_sinai">North Sinai</option>
+            <option value="port_said">Port Said</option>
+            <option value="qalyubia">Qalyubia</option>
+            <option value="qena">Qena</option>
+            <option value="red_sea">Red Sea</option>
+            <option value="sharqia">Sharqia</option>
+            <option value="sohag">Sohag</option>
+            <option value="south_sinai">South Sinai</option>
+            <option value="suez">Suez</option>
+          </select>
+          <span class="invalid-feedback">
+            <span *ngIf="stateInput.errors?.['required']"
+              >Please select your state</span
+            >
+          </span>
+        </div>
+
+        <!-- CITY -->
+        <div class="input-box mb-4">
+          <label for="city">City</label><br />
+          <input
+            id="city"
+            name="city"
+            type="text"
+            class="form-control"
+            required
+            #cityInput="ngModel"
+            [(ngModel)]="shipping.city"
+            [ngClass]="{
+              'is-invalid':
+                (cityInput.touched || cityInput.dirty) && cityInput.invalid
+            }"
+          />
+          <span class="invalid-feedback">
+            <span *ngIf="cityInput.errors?.['required']"
+              >Please enter your city</span
+            >
+          </span>
+        </div>
+
+        <!-- STREET  -->
+        <div class="input-box mb-4">
+          <label for="street">Street</label><br />
+          <input
+            id="street"
+            name="street"
+            type="text"
+            class="form-control"
+            required
+            #streetInput="ngModel"
+            [(ngModel)]="shipping.street"
+            [ngClass]="{
+              'is-invalid':
+                (streetInput.touched || streetInput.dirty) &&
+                streetInput.invalid
+            }"
+          />
+          <span class="invalid-feedback">
+            <span *ngIf="streetInput.errors?.['required']"
+              >Please enter your street</span
+            >
+          </span>
+        </div>
+
+        <!-- NEXT -->
+        <div class="input-box button mx-auto text-center">
+          <input
+            type="Submit"
+            class="btn btn-success"
+            value="Next"
+            [disabled]="signupForm.invalid"
+          />
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- ---------------------------------------------------------------------------- -->
+  <div
+    class="col-lg-4 col-md-4 col-sm-8 mx-auto"
+    style="border: 1px solid rgb(212, 206, 206); border-radius: 5px"
+  >
+    <!-- **** CART ***** -->
+    <div
+      class="cart fs-1 me-3 position-relative mx-auto mb-2"
+      style="height: fit-content"
+    >
+      <!-- Button placed after the cart items -->
+      <div class="button-cart mx-auto row mb-2 mt-4 mt-2">
+        <button
+          type="button"
+          class="btn mt-auto col-12"
+          style="background-color: #ff6600; width: 100%"
+          [routerLink]="['/cart']"
+        >
+          BACK TO CART
+        </button>
+      </div>
+      <!-- TOTAL PILL -->
+      <div class="button-checkout mx-auto row mb-4 mt-4 mt-2">
+        <button
+          type="button"
+          class="btn mt-auto col-12"
+          style="background-color: #e7e3e0; width: 100%"
+        >
+          Total: {{ total | currency : "EGP" }}
+        </button>
+      </div>
+      <p style="font-size: small; text-align: center; font-weight: bold">
+        Your Product in Cart
+      </p>
+      <div class="cart mb-2">
+        <div
+          class="dropdown-div d-flex justify-content-center align-items-center bg-white mb-2"
+          id="cartDropDiv"
+        >
+          <ng-container *ngIf="cartItems.length > 0; else emptyCart">
+            <!-- Loop through cart items and display card details -->
+            <div
+              class="container-fluid mt-20 mb-2"
+              style="max-height: 500px; overflow-y: auto"
+            >
+              <!-- Your card template goes here -->
+              <div
+                class="card mb-3"
+                style="border: 0"
+                *ngFor="let item of cartItems"
+              >
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      [src]="item.image"
+                      class="card-img-top"
+                      alt="Product Image"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <a [routerLink]="'/product/' + item.id" id="productName">
+                        <p class="card-title" style="font-size: xx-small">
+                          {{ item.name }}
+                        </p>
+                      </a>
+                      <p class="card-text" style="font-size: x-small">
+                        Price: {{ item.price | currency : "EGP" }}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ng-container>
+          <!-- If cartItems is empty, show this message -->
+          <ng-template #emptyCart>
+            <div class="container">
+              <div class="text-center mt-5">
+                You have no items in your shopping cart.
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

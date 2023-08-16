@@ -1,0 +1,111 @@
+
+<div class="row"></div>
+
+<div class="row mx-auto m-2">
+  <div class="col-lg-6 col-md-6 col-sm-10 mx-auto mb-2"> 
+
+    <div class="container">
+      <div class="container mb-3"> 
+        <span (click)="backToShipping()" id="backToShipping">
+            <i class="fa-regular fa-circle-check" style="color: #e4e4e4;font-size: xx-large;"></i>&nbsp;Shipping</span>
+       &nbsp;&nbsp;&nbsp; <span><i class="fa-solid fa-angles-right" style="font-size: xx-large;"></i></span> &nbsp;&nbsp;&nbsp;
+        <span style="font-size: large;"><i class="fa-regular fa-circle-check" style="color: #ff6600;font-size: xx-large;"></i>&nbsp;Review & Payments</span>
+      </div>
+      <h5>Payment Method</h5>
+      <hr>
+      <form  name="signupForm"  #signupForm="ngForm">
+       
+        <!-- Cash On Delivery -->
+       <div class="row mb-2">
+        <div><input type="radio" [(ngModel)]="paymentMethod" name="payment" value="cashOnDelivery" (change)="toggleDeliveryDiv()"></div>
+        <a><img src="assets/payment/COD.png"><span style="color: #777;font-size:x-small;">&nbsp;&nbsp;Cash On Delivery</span></a>
+        <div id="delivary" *ngIf="showDeliveryDiv" class="container m-2 mt-5 mx-auto d-flex justify-content-end">
+          <button class="btn" id="success">PLACE ORDER</button>
+        </div>
+       </div>
+       <hr>
+
+       <!-- Vodafone Cash -->
+       <div class="row mb-2" >
+        <div><input type="radio" [(ngModel)]="paymentMethod" name="payment" value="vodafone" (change)="toggleVodafone()"></div>
+        <a><img src="assets/payment/VFCashLogo.png"><span style="color: #777;font-size:x-small;">&nbsp;&nbsp;Vodafone Cash</span></a>
+        <div id="vodafone" *ngIf="showVodafoneCash" class="container m-2 mt-5 mx-auto d-flex justify-content-end">
+          <button class="btn" id="success">NEXT</button>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Paypal -->
+      <div class="row mb-2" >
+        <div><input type="radio" [(ngModel)]="paymentMethod" name="payment" value="paypal" (change)="togglePaypal()"></div>
+        <a><img src="assets/payment/paypal.png" style="width:180px;"><span style="color: #777;font-size:x-small;">Paypal</span></a>
+        <div id="paypal" *ngIf="showPaypal" class="container m-2 mt-5 mx-auto d-flex justify-content-end">
+          <button class="btn" id="success" (click)="paypal()">PAY</button>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Credit Card Payment -->
+      <div class="row mb-2" >
+        <div><input type="radio" [(ngModel)]="paymentMethod" name="creditCard" value="creditCard" (change)="toggleCreditCard()"></div>
+        <a><img src="assets/payment/visa.png" ><span style="color: #777;font-size:x-small;">Credit Card Payment</span></a>
+        <div id="creditCard" *ngIf="showCreditCard" class="container m-2 mt-5 mx-auto d-flex justify-content-end">
+          <button class="btn" id="success">PAY</button>
+        </div>
+      </div>
+      <hr>
+  
+      
+      </form>
+    </div>
+  </div>
+  <!-- ---------------------------------------------------------------------------- -->
+  <!-- right dev  -->
+  <div class="col-lg-4 col-md-4 col-sm-8 mx-auto" style="border: 1px solid rgb(212, 206, 206);border-radius: 5px;">
+
+    <!-- **** CART ***** -->
+    <div class="cart fs-1 me-3 position-relative mx-auto mb-2" style="height: fit-content;">
+       <!-- Button placed before the cart items -->
+       <div class="button-cart mx-auto row mb-2 mt-4 mt-2">
+        <button type="button" class="btn mt-auto col-12" style="background-color: #ff6600;width:100%" [routerLink]="['/cart']">BACK TO CART</button>
+      </div>
+       <!-- TOTAL PILL -->
+       <div class="button-checkout mx-auto row mb-4 mt-4 mt-2">
+        <button type="button" class="btn mt-auto col-12" style="background-color: #e7e3e0;width:100%">Total: {{ total | currency : "EGP" }}</button>
+      </div>
+      <p style="font-size: small;text-align: center;font-weight: bold;">Your Product in Cart</p>
+      <div class="cart mb-2">
+        <div class="dropdown-div  d-flex justify-content-center align-items-center bg-white mb-2" id="cartDropDiv">
+          <ng-container *ngIf="cartItems.length > 0; else emptyCart">
+            <!-- Loop through cart items and display card details -->
+            <div class="container-fluid mt-20 mb-2" style="max-height: 500px;overflow-y:auto;">
+              <!-- Your card template goes here -->
+              <div class="card mb-3" style="border: 0;" *ngFor="let item of cartItems">
+                <div class="row g-0">
+                  <div class="col-md-4 ">
+                    <img [src]="item.image" class="card-img-top" alt="Product Image" />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <a [routerLink]="'/product/' + item.id" id="productName">
+                        <p class="card-title" style="font-size: xx-small;">{{ item.name }}</p>
+                      </a>
+                      <p class="card-text" style="font-size: x-small;">Price: {{ item.price | currency: "EGP" }}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ng-container>
+          <!-- If cartItems is empty, show this message -->
+          <ng-template #emptyCart>
+            <div class="container">
+              <div class="text-center mt-5">You have no items in your shopping cart.</div>
+            </div>
+          </ng-template>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
