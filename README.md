@@ -1,4 +1,4 @@
-# 2B Store
+# 2B E-Commerce Store
 
 This project was created with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.0 for the front-end and [ASP.NET Core](https://github.com/dotnet/AspNetCore.Docs) ( .NET 7.0 ) for the back-end ( dashboard & Web API ).
 
@@ -12,7 +12,7 @@ Enter `Frontend_for_main_website` folder and run `ng serve` for a dev server. Na
 
 ### Back-end
 
-The back-end is designed using [Onion Architecture](https://www.google.com/search?q=onion+architecture+c%23&oq=onion+arch&aqs=chrome.0.35i39i650j69i64j69i57j0i512l5.5228j0j9&sourceid=chrome&ie=UTF-8), for the dashboard and the web API.
+The back-end is designed using **_[Onion Architecture](https://www.google.com/search?q=onion+architecture+c%23&oq=onion+arch&aqs=chrome.0.35i39i650j69i64j69i57j0i512l5.5228j0j9&sourceid=chrome&ie=UTF-8)_**, for the dashboard and the web API.
 
 1. Enter `Backend_&_Dashboard_for_main_website` folder.
 2. Open the solution with visual studio (recommended).
