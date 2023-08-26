@@ -1,0 +1,103 @@
+
+/* CART NAV BAR  */
+
+
+#cartDropDiv {
+    max-height: 400px;
+    overflow-y:scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .product-card-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .button-cart:hover {
+    color: #ffffff; 
+    background-color: #ff6600; 
+    border-color: #ff6600; 
+  }
+
+
+  /* Cart Details  */
+
+.cart {
+    color: var(--identity-color);
+    cursor: pointer;
+    font-size: xx-small;
+    width: 2.5px;
+    height: 2.5px;
+    vertical-align: middle;
+  }
+  
+  .cart::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent #818181 #818181 transparent;
+    transform: rotate(45deg) translateY(-50%);
+    right: -25px;
+    top: 30px;
+  }
+  .cart .items-num {
+    right: 0px;
+    top: 7px;
+    font-size: 8px;
+    background-color: #f37025;
+    color: white;
+    width: 10px;
+    height: 10px;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+  }
+  
+  .cart .dropdown-arrow {
+    right: -20px;
+    top: 55px;
+    font-size: 14px;
+    color: white;
+    border: 6px solid;
+    border-color: var(--identity-color) transparent transparent
+      var(--identity-color);
+    transform: rotate(45deg);
+    z-index: 9999;
+    cursor: default;
+    display: none;
+  }
+  .cart .dropdown-arrow.active {
+    display: block;
+  }
+  .cart .dropdown-div {
+    top: 60px;
+    right: -40px;
+    width: 283px;
+    height: fit-content;
+    overflow-y:scroll;
+    color: black;
+    border: none;
+    border-top: 5px solid var(--identity-color);
+    border-radius: 0;
+    box-shadow: 0 0 5px 1px #ddd;
+    font-size: 13px;
+    cursor: default;
+    display: none !important;
+  }
+  .cart .dropdown-div.active {
+    display: flex !important;
+  }
+
+  /* to hide scroll in side bar  */
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }

@@ -1,0 +1,229 @@
+<div class="container my-3" *ngIf="product">
+  <div class="goToBack">
+    <button (click)="goBack()" class="btn btn-link my-2">
+      <i class="fa-solid fa-arrow-right"></i>
+    </button>
+  </div>
+
+  <div class="main row">
+    <div class="left col-lg-9 col-md-12 col-sm-12">
+      <div class="row mx-auto">
+
+        <div
+          class="photo col-lg-5 col-md-5"
+          style="
+            border: 1px solid rgb(167, 167, 167);
+            padding: 5px;
+            border-radius: 5px;
+          "
+        >
+          <img [src]="product.image" style="max-width: 100%" />
+        </div>
+        <div class="details col-lg-6 col-md-6">
+
+          <ng-container *ngIf="product.discount">
+            <div class="product-discount row mx-left p-0 m-0">
+              <p>{{ product.discount | formatDiscount }}</p>
+            </div>
+           </ng-container>
+
+          <div class="product-name mx-auto">
+            <h3>{{ product.name }}</h3>
+          </div>
+          <div class="product-rating mx-auto">
+            <ng-container *ngIf="product.rating !== undefined; else noRating">
+              <ng-container
+                *ngFor="let star of getColoredStars(product.rating)"
+              >
+                <span class="star" [class.filled]="star === 1">&#9733;</span>
+              </ng-container>
+            </ng-container>
+            <ng-template #noRating>
+              <ng-container *ngFor="let star of getColoredStars(0)">
+                <span class="star">&#9733;</span>
+              </ng-container>
+            </ng-template>
+            &nbsp; | &nbsp;
+            <a >Review this product </a>
+          </div>
+
+          <div class="info mt-3">
+            <p>
+              <span style="font-weight: bolder">Screen Size :</span>
+              <!-- {{ product.screenSize }} -->
+            </p>
+            <p>
+              <span style="font-weight: bolder">Screen Size :</span>
+              <!-- {{ product.screenResolution }} -->
+            </p>
+            <p>
+              <span style="font-weight: bolder">Screen Size :</span>
+              <!-- {{ product.warranty }} -->
+            </p>
+            <hr />
+          </div>
+          <div class="product-price mx-auto row">
+            <!-- THERE IS  DISCOUNT -->
+            <ng-container *ngIf="product.discount; else originalPrice">
+              <p class="text-center mb-2">
+                <del><span class="oldPrice">{{ product.price | currency : "EGP" }}</span></del>
+                <span class="newPrice">{{ (product.price * ((100-product.discount)*0.01)) | currency : "EGP" }}</span>
+              </p>
+            </ng-container>
+
+            <!-- THERE IS NO DISCOUNT -->
+            <ng-template #originalPrice>
+              <p class="text-center mb-2">
+                <span class="boldSmall">{{ product.price | currency : "EGP" }}</span>
+              </p>
+            </ng-template>
+
+            <!-- <ng-container [ngSwitch]="product.stock" class="container">
+              <ng-container *ngSwitchCase="1"><p class="text-center stockOut " style="color: rgb(255, 174, 0);">{{"Last One Item" | translate}}</p></ng-container>
+              <ng-container *ngSwitchCase="2"><p class="text-center stockOut" style="color: rgb(255, 123, 0);">{{"Last Two Items" | translate}}</p></ng-container>
+              <ng-container *ngSwitchCase="0"><p class="text-center stockOut" style="color: rgb(255, 0, 0);">{{"Out Of Stock" | translate}}</p></ng-container>
+            </ng-container> -->
+          </div>
+          <hr/>
+          <div class="button-cart mx-auto row">
+            <div class="btn-side1 col-2" (click)="addToWishList(product)">
+              <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <button
+              (click)="addToCart(product)"
+              type="button"
+              class="btn btn-primary mt-auto col-8"
+              id="btnCart"
+            >
+              <span><i class="fa-solid fa-cart-plus"></i> ADD TO CART</span>
+            </button>
+            <div class="btn-side2 col-2">
+              <i class="fa-solid fa-signal"></i>
+            </div>
+          </div>
+        </div>
+
+        <pre></pre>
+
+        <div class="detailsTitle">
+          <div class="title">
+            <span
+              (click)="activeTab = 'details-table'"
+              [class.active]="activeTab === 'details-table'"
+              >DETAILS</span
+            >
+
+            <span
+              (click)="activeTab = 'moreInformation'"
+              [class.active]="activeTab === 'moreInformation'"
+              >MORE INFORMATION</span
+            >
+
+            <span
+              (click)="activeTab = 'userReview'"
+              [class.active]="activeTab === 'userReview'"
+              >REVIEWS</span
+            >
+            <hr style="margin-top: 2px" />
+          </div>
+          <div *ngIf="activeTab === 'details-table'" class="details-table">
+            <div *ngFor="let detail of product.detailstable">
+              <p *ngIf="isBold(detail)">
+                <span style="font-weight: bold">{{ removeTags(detail) }}</span>
+              </p>
+              <p *ngIf="!isBold(detail)">{{ removeTags(detail) }}</p>
+            </div>
+
+            <div *ngFor="let img of product.imagesdetails">
+              <img [src]="img" alt="Product Image" style="width: 100%" />
+            </div>
+          </div>
+
+          <div *ngIf="activeTab === 'moreInformation'" class="moreInformation">
+            <table>
+              <tr *ngFor="let item of product.informationTable">
+                <td
+                  style="
+                    font-weight: bold;
+                    padding-right: 25px;
+                    padding-bottom: 30px;
+                  "
+                >
+                  {{ item.titleTable }}
+                </td>
+                <td style="padding-bottom: 30px; padding-left: 25px">
+                  {{ item.information }}
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <div *ngIf="activeTab === 'userReview'" class="userReview">
+            <div class="container my-3" *ngIf="product; else NoResults">
+              <app-rating-product
+                [productId]="product.id"
+                [productName]="product.productNameEN"
+              ></app-rating-product>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- *********** SIDE CAROSEL *********** -->
+    <div class="right-div col-lg-3">
+      <div class="right" *ngIf="product">
+        <app-side-carosel [selectedsubCategoryId]="product.subcategoryId"></app-side-carosel>
+      </div>
+    </div>
+  </div>
+
+  <ng-template #NoResults>
+    <h2 class="text-center">No Results</h2>
+  </ng-template>
+
+    <!-- *********** MAIN CAROSEL *********** -->
+
+  <div class="container">
+    <div class="container my-3" *ngIf="product">
+      <app-main-carosel
+        [selectedsubCategoryId]="product.subcategoryId"
+      ></app-main-carosel>
+    </div>
+  </div>
+
+  <!-- ======================================================================================== -->
+    <!-- fixed div for product after scroll  -->
+
+    <div class="fixedDivContainer" [ngStyle]="getFixedDivStyle()" >
+      <div class=" row col-lg-12 col-md-12 fixedDiv"  >
+
+       <div class="product-photo col-lg-2 col-md-2  col-sm-6" style="padding-left: 100px;">
+         <img [src]="product.image" class="card-img-top" alt="Product Image"  />
+       </div>
+
+       <div class="col-lg-4 col-md-5 divFixedDetails  " style="margin-left: 5px;">
+
+       <div class="product-name ">
+         <p style="font-weight: bold; font-size: small;">{{ product.name}}</p>
+       </div>
+       <div class="product-price mx-auto">
+         <p style="font-weight: bolder;font-size: small;">{{ product.price  | currency : "EGP" }}</p>
+       </div>
+     </div>
+     <div class="col-lg-5 col-md-6 col-sm-6">
+      <div class="button-cart mx-auto " >
+        <button (click)="addToCart(product)" type="button" class="btn btn-primary " id="btnCart"  >
+          <span style="font-size: small;"><i class="fa-solid fa-cart-plus"></i> ADD TO CART</span>
+        </button>
+      </div>
+     </div>
+       </div>
+      </div>
+
+
+
+  <!-- ========================================================================================= -->
+
+
+

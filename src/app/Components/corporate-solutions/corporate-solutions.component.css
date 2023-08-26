@@ -1,0 +1,47 @@
+
+img {
+    padding: 5px;
+}
+
+.card{
+    width: 25vw ; 
+    margin: 10px;
+    background-color:#f5f5f5;
+    border:0;
+}
+
+a{
+    text-decoration: none;
+    color:orangered;
+}
+p :hover  {
+    font-weight: bolder;
+    scale: 1.05;
+}
+
+.card-body p {
+    color:rgb(167, 167, 167);
+    font-size: x-small;
+}
+
+
+@media (min-width: 576px) {
+    .card {
+        width:80vw;
+    }
+}
+
+@media (min-width: 768px) {
+    .card {
+        width:23vw;
+    }
+}
+
+@media (min-width: 992px) {
+    .card {
+        width:23vw;
+    }
+}
+
+
+  

@@ -1,0 +1,599 @@
+
+
+<div class="row hiddenNavBar" >
+
+ 
+ <div class="container mx-auto text-center">
+
+  <a class="btn text-center" style="background-color: #cccabc;border-radius:0;width: 100%;" (click)="showAccount()">ACCOUNT</a> 
+    <span>
+      <a class="btn" style="background-color: #ff6600;border-radius:0;width: 33.33%;" (click)="showNavBar()">Menu</a>
+      <a class="btn" style="background-color: #cccabc;border-radius:0;width: 33.33%;" (click)="showCart()">Cart</a> 
+      <a class="btn" style="background-color: #ff6600;border-radius:0;width: 33.33%;"><a (click)="toggleLanguage()" class="language text-decoration-none" *ngIf="localLang == 'en'" style="font-size: x-small;color: black;">
+        <img src="assets/egypt-flag.png" alt="" style="width: 25%;" />
+        العربية
+      </a>
+      <a (click)="toggleLanguage()" class="language text-decoration-none" *ngIf="localLang == 'ar'"  style="font-size: x-small;color: black;">
+        <img src="assets/USA-flag.png" alt="" style="width: 25%;"/>
+        English
+       </a>
+      </a>
+    </span>  
+     </div>
+
+    <div class="col-12 ">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky" style="display: flex; justify-content: center; align-items: center" *ngIf="isNavBarVisible">
+          <div class="container-fluid">
+            <div class="container-fluid mx-auto flex-wrap justify-content-center">
+              <ul class="navbar-ul mx-auto w-100 flex-wrap flex-row" style="flex-wrap: wrap">
+              
+                <!-- *********************   COMPUTERS   ****************** -->
+  
+                <li class="nav-item dropdown" id="computer">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    [routerLink]="['/home/category-details', 1002]"
+
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    (click)="toggleDropdown(1)"
+                  >
+                  {{"COMPUTERS" | translate}}
+                  </a>
+  
+                  <div class="dropdown-menu "  [ngClass]="{ show: isDropdownOpen[1] }">
+                      <div class="row mx-auto nav-fill w-100 col-12">
+                        <div class="col-12">
+                          <a [routerLink]="['home/subCategory-details', 1002]" 
+                          ><span>{{"LAPTOPS" | translate}}</span></a>
+                          <ul>
+                            <li><a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1003]">{{"HP" | translate}}</a></li>
+                            <li><a class="dropdown-item" [routerLink]="['home/subCategory-details', 1006]">{{"DELL" | translate}}</a></li>
+                            <li><a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1004]">{{"LENOVO" | translate}}</a></li>
+                            <li><a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1005]">{{"ASUS" | translate}}</a></li>
+                            <li><a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1007]">{{"APPEL" | translate}}</a></li>
+                            <li><a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1008]">{{"ACER" | translate}}</a></li>
+                            <li><a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1009]">{{"HUAWEI" | translate}}</a></li>
+                            <li><a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1012]">{{"ITEL" | translate}}</a></li>
+                          </ul>
+                        </div>
+    
+                        <div class="col-12">
+                           <a [routerLink]="['home/subCategory-details', 1050]"><span>{{"ELECTRONIC SOLUTIONS" | translate}}</span></a>
+                           <ul>
+                            <li>
+                              <a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1051]">{{"Network" | translate}}</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1052]">{{"Security Cameras" | translate}}</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1053]">{{"Projectors" | translate}}</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1054]">{{"Smart Home" | translate}}</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1055]">{{"Computer Monitor" | translate}}</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1056]">{{"Software" | translate}}</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-12">
+                          <a [routerLink]="['home/subCategory-details', 1035]"><span>{{"PRINTERS" | translate}}</span></a>
+                          <ul>
+                            <li><a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1037]">{{"INKJET" | translate}}</a></li>
+                            <li><a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1036]">{{"LASERJET" | translate}}</a></li>
+                            <li><a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1038]">{{"SUPPLIES" | translate}}</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-12">
+                          <a [routerLink]="['home/subCategory-details', 1039]"><span>{{"DESCTOPS" | translate}}</span></a>
+                          <ul>
+                            <li><a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1040]">{{"DELL" | translate}}</a></li>
+                            <li><a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1041]">{{"LENOVO" | translate}}</a></li>
+                          </ul>
+                        </div>
+                      </div>
+    
+                      <div class="row mx-auto nav-fill w-100 col-12">
+    
+    
+                        <div class="col-12">
+                          <a [routerLink]="['home/subCategory-details', 1043]"><span>{{"STORAGE" | translate}}</span></a>
+                          <ul>
+                            <li>
+                              <a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1044]">{{"USB Flash Drives" | translate}}</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1045]">{{"Hard Drives" | translate}}</a>
+                            </li>
+                            <li>Sub
+                              <a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1049]">{{"Memory cards" | translate}}</a>
+                            </li>
+                          </ul>
+                        </div>
+    
+                        <div class="col-12">
+                          <a [routerLink]="['home/subCategory-details', 1042]"><span>{{"Build Your PC" | translate}}</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  
+                <!-- *********************   MOBILE & TABLET   ****************** -->
+  
+                <li class="nav-item dropdown" id="mobile">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    [routerLink]="['/home/category-details', 1003]"   
+                     id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    (click)="toggleDropdown(2)"
+                  >
+                  {{"MOBILE & TABLET" | translate}}
+                  </a>
+                  <div
+                    class="dropdown-menu "
+                    aria-labelledby="navbarDropdown"
+                    style="flex: 1"
+                    [ngClass]="{ show: isDropdownOpen[2] }"
+                  >
+                    <div class="row mx-auto nav-fill w-100">
+                      <div class="col-12">
+                        <a [routerLink]="['home/subCategory-details', 1015]"
+                        ><span>{{"Mobile Phones" | translate}}</span></a>
+                        <ul>
+                          <li><a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1017]">{{"Samsung" | translate}}</a></li>
+                          <li><a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1016]">{{"Apple" | translate}}</a></li>
+                          <li><a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1018]">{{"Huawei" | translate}}</a></li>
+                          <li><a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1019]">{{"OPPO" | translate}}</a></li>
+                          <li><a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1020]">{{"Realme" | translate}}</a></li>
+                          <li><a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1021]">{{"Xiaomi" | translate}}</a></li>
+                          <li><a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1022]">{{"Honor" | translate}}</a></li>
+                          <li><a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1023]">{{"Infinix" | translate}}</a></li>
+                          <li><a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1024]">{{"Nokia" | translate}}</a></li>
+                          <li><a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1025]">{{"Viwa" | translate}}</a></li>
+                          <li><a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1026]">{{"Sico" | translate}}</a></li>
+                          <!-- <li><a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1002]">Vivo</a></li> -->
+                          <li><a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1027]">{{"TCL" | translate}}</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-12">
+                        <a [routerLink]="['home/subCategory-details', 1028]"> <span>{{"Tablets" | translate}}</span></a>
+                        <ul>
+                          <li><a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1029]">{{"Huawei" | translate}}</a></li>
+                          <li><a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1030]">{{"Apple" | translate}}</a></li>
+                          <li><a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1031]">{{"Samsung" | translate}}</a></li>
+                          <li><a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1032]">{{"Lenovo" | translate}}</a></li>
+                          <li><a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1033]">{{"Honor" | translate}}</a></li>
+                          <li><a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1034]">{{"Xiaomi" | translate}}</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- ***************   Gaming ************** -->
+                <li class="nav-item dropdown" id="gaming">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    [routerLink]="['/home/category-details', 1004]"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    (click)="toggleDropdown(3)"
+                    
+                  >
+                  {{"GAMING" | translate}}
+                  </a>
+                  <div class="dropdown-menu " aria-labelledby="navbarDropdown" [ngClass]="{ show: isDropdownOpen[3] }">
+                    <div class="row mx-auto nav-fill w-100 col-12">
+                      <div class="col-12" style="padding-left: 15px;">
+                        <a [routerLink]="['home/subCategory-details', 1057]"><span>{{"Playstation" | translate}}</span></a>
+                      </div>
+                      <div class="col-12 " style="padding-left: 15px;">
+                        <a [routerLink]="['home/subCategory-details', 1064]"><span>{{"Games CD" | translate}}</span></a>
+                      </div>
+  
+                      <div class="row mx-auto nav-fill w-100 col-12">
+                        <div
+                          class="col-12"
+                          
+                        >
+                          <a [routerLink]="['home/subCategory-details', 1058]"><span>{{"GAMING ACCESSORIES" | translate}}</span></a>
+                          <ul>
+                            <li>
+                              <a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1059]"
+                                >{{"Gamepads & Controllers" | translate}}</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1060]"
+                                >{{"Gaming Mouse & Keyboard" | translate}}</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1061]"
+                                >{{"Gaming Headphones" | translate}}</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1062]"
+                              >{{"Gaming Combo" | translate}}</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1063]"
+                                >{{"Heavy Gamers Accessories" | translate}}</a
+                              >
+                            </li>
+                            <!-- <li>
+                              <a class="dropdown-item" href="#"
+                                >Cases & Coolers</a
+                              >
+                            </li> -->
+                          </ul>
+                        </div>
+                        <div class="col-12">
+                          <a [routerLink]="['home/subCategory-details', 1065]"><span>{{"GAMING LAPTOPS" | translate}}</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+  
+                <!-- ***************   HOME APPLIANCES ************** -->
+  
+                <li class="nav-item dropdown" id="homeAppliance">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    [routerLink]="['/home/category-details', 1005]"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    (click)="toggleDropdown(4)"
+                  >
+                  {{"HOME APPLIANCES" | translate}}
+                  </a>
+                  <div
+                    class="dropdown-menu "
+                    aria-labelledby="navbarDropdown"
+                    style="flex: 1"
+                    [ngClass]="{ show: isDropdownOpen[4] }"
+                  >
+                    <div class="row mx-auto nav-fill w-100 col-12 mb-2">
+                      <div class="col-12">
+                        <a [routerLink]="['home/subCategory-details', 1066]"><span>{{"LARGE HOME APPLIANCES" | translate}}</span>
+                        </a>
+                        <ul>
+                          <li>
+                            <a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1067]"
+                              >{{"Refrigerators & Deep Freezers" | translate}}</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1068]"
+                              >{{"Washing Machines & Dryers" | translate}}</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1069]"
+                              >{{"Cookers and Ovens" | translate}}</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1070]"
+                            >{{"Water Heaters" | translate}}</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item">
+                              {{"Dishwashers" | translate}}</a>
+                          </li>
+                          <!-- <li><a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1016]">Built-in</a></li> -->
+                        </ul>
+                      </div>
+                      <div class="col-12">
+                        <a href=""><span>{{"SMALL HOME APPLIANCES" | translate}}</span></a>
+                        <ul>
+                          <li>
+                            <a class="dropdown-item" >{{"Water Filters" | translate}}</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item"
+                              >{{"Kitchen Appliances" | translate}}</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item"
+                              >{{"Microwaves and Electric Ovens" | translate}}</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" >{{"Water Dispenser" | translate}}</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" >{{"Suction Fan" | translate}}</a>
+                          </li>
+                          <li><a class="dropdown-item" >{{"Iron" | translate}}</a></li>
+                          <li>
+                            <a class="dropdown-item" >{{"Vacuum Cleaner" | translate}}</a>
+                          </li>
+                          <li><a class="dropdown-item" >{{"Fans" | translate}}</a></li>
+                          <li><a class="dropdown-item" >{{"Heaters" | translate}}</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-12">
+                        <a [routerLink]="['home/subCategory-details', 1074]"><span>{{"TVs" | translate}}</span></a>
+                      </div>
+                      <div class="col-12">
+                        <a><span>{{"AIR CONDITIONERS" | translate}}</span></a>
+                      </div>
+                    </div>
+  
+                    <div class="row mx-auto nav-fill w-100 col-12 mb-2">
+                      <div class="col-12">
+                        <a [routerLink]="['home/subCategory-details', 1071]"><span>{{"PERSONAL CARE" | translate}}</span></a>
+                        <ul>
+                          <li>
+                            <a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1072]">{{"FOR HIM" | translate}}</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" [routerLink]="['home/subSubCategory-details', 1073]">{{"FOR HER" | translate}}</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-12">
+                        <a><span>{{"HEALTH CARE" | translate}}</span></a>
+                        <ul>
+                          <!-- <li>
+                            <a class="dropdown-item" >Weight Scales</a>
+                          </li> -->
+                          <li>
+                            <a class="dropdown-item" >{{"Hygiene Products" | translate}}</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-12">
+                        <a><span>{{"HOME ESSENTIALS" | translate}}</span></a>
+                        <ul>
+                          <li>
+                            <a class="dropdown-item" >{{"Tools" | translate}}</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" >{{"Landline Phones" | translate}}</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+  
+  
+                <!-- ***************   ACCESSORIES  ************** -->
+  
+                <li class="nav-item dropdown" id="Accessories">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    [routerLink]="['/home/category-details', 1006]"       
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    (click)="toggleDropdown(5)"
+                  >
+                  {{"ACCESSORIES" | translate}}
+                </a>
+                <div
+                  class="dropdown-menu p-3"
+                  aria-labelledby="navbarDropdown"
+                  style="flex: 1"
+                >
+                  <div class="row mx-auto nav-fill w-100 col-12 mb-2">
+                    <div class="col-12">
+                      <a><span>{{"COMPUTER ACCESSORIES" | translate}}</span></a>
+                      <ul>
+                        <li>
+                          <a class="dropdown-item"
+                            >{{"Laptop & School Bags" | translate}}</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item"
+                            >{{"Laptop Chargers & Batteries" | translate}}</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item"
+                            >{{"Cable & Converters" | translate}}</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item"
+                            >{{"Keyboards & Mouse" | translate}}</a
+                          >
+                        <!-- </li>
+                        <li><a class="dropdown-item" >Web Cams</a></li>
+                        <li> -->
+                          <a class="dropdown-item" >{{"Power Supply" | translate}}</a>
+                        </li>
+                        <li><a class="dropdown-item" >{{"Other" | translate}}</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-12">
+                      <a><span>{{"MOBILE ACCESSORIES" | translate}}</span></a>
+                      <ul>
+                        <li><a class="dropdown-item" >{{"Cables" | translate}}</a></li>
+                        <li><a class="dropdown-item" >{{"Chargers" | translate}}</a></li>
+                        <li>
+                          <a class="dropdown-item" >{{"Power Bank" | translate}}</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" >{{"Cases & Covers" | translate}}</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" >{{"Screen Protector" | translate}}</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-12">
+                      <a><span>{{"WEARABLES" | translate}}</span></a>
+                      <ul>
+                        <li>
+                          <a class="dropdown-item" >{{"Smart Watch" | translate}}</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" >{{"Smart Band" | translate}}</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item"
+                            >{{"Smart Watch Accessories" | translate}}</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item"
+                            >{{"Smart Watches Chargers" | translate}}</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-12">
+                      <a><span>{{"AUDIO" | translate}} </span></a>
+                      <ul>
+                        <li>
+                          <a class="dropdown-item"
+                            >{{"Over Ear Headphones" | translate}}</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item"
+                            >{{"In-Ear Headphones" | translate}}</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item"
+                            >{{"True Wireless Headphones" | translate}}</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" >{{"TWS Covers" | translate}}</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item"
+                            >{{"Portable Speakers" | translate}}</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" >{{"Sub-woofer" | translate}}</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" >{{"Microphone" | translate}}</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="row mx-auto nav-fill w-100 col-12 mb-2">
+                    <div class="col-12">
+                      <a><span>{{"TV ACCESSORIES" | translate}}</span></a>
+                    </div>
+                    <div class="col-12">
+                      <a><span>{{"POWER" | translate}}</span></a>
+                    </div>
+                    <div class="col-12">
+                      <a><span>{{"DIGITAL CAMERA" | translate}}</span></a>
+                    </div>
+                    <div class="col-12">
+                      <a><span>{{"CAR ACCESSORIES" | translate}}</span></a>
+                    </div>
+                  </div>
+
+                  <div class="row mx-auto nav-fill w-100 col-12 mb-2">
+                    <div class="col-12">
+                      <a><span>{{"BATTERIES" | translate}}</span></a>
+                    </div>
+                    <div class="col-12">
+                      <a><span>{{"CALCULATORS" | translate}}</span></a>
+                    </div>
+                    <div class="col-12">
+                      <a><span> </span></a>
+                    </div>
+                    <div class="col-12">
+                      <a><span> </span></a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+  
+                <!-- ****************** OTHER ICONS NAV ************************ -->
+  
+                <li class="nav-item">
+                  <a class="nav-link" [routerLink]="['/home/category-details', 1007]"> {{"CORPORATE.SOLUTIONS" | translate}}</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" [routerLink]="['/home/category-details', 1008]">{{"DEALS" | translate}}</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  
+    <!-- <div class="col-lg-1"></div> -->
+
+    <!-- ****************** Cart  ************************ -->
+    <div *ngIf="isCartVisible">
+      <app-cart-in-hidden-navbar></app-cart-in-hidden-navbar>
+   </div>
+  </div>
+  
+  <!-- ----------------------------------------------------- -->
+<!-- ********* HEADER *********** -->
+
+<div class="signing-links  " style="width: 100%;margin: 0;padding: 0;" *ngIf="isAccountVisible">
+  <div
+  *ngIf="isAuthorized"
+  class="account-name d-inline "
+  style="color: #ff6600;"
+  (click)="toggleMenu()" 
+>
+  <span style="color: black;">Welcome,</span> {{ currentUser?.unique_name }}
+
+  <ul class="menu" style="width: 100%;margin-left: 10px;margin-bottom: 10px;">
+    <li >
+      <a class="text-decoration-none"      
+       style="font-size: xx-small;text-decoration: none;" href="/userProfile">My account</a>
+    </li>
+
+    <!-- <li >
+      <a href="/home/wishList" class="text-decoration-none"
+      style="font-size: xx-small;text-decoration: none;"
+      >My wishlist</a>
+    </li> -->
+
+  </ul>
+</div>
+<div  id="hederInSignOut" style="margin-top: 20px;">
+  <a *ngIf="!isAuthorized" routerLink="/sign-in"          
+  >{{"sign in" | translate}}</a>
+  <pre></pre>
+  <a *ngIf="!isAuthorized" routerLink="user/account/create"    
+   >{{"create an account" | translate}}</a>
+</div>
+
+   <a
+   (click)="signOut()"
+   class="pointer text-decoration-none "
+   *ngIf="isAuthorized" 
+ >
+   Sign out
+ </a>
+</div>

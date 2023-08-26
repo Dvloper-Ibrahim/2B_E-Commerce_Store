@@ -1,0 +1,61 @@
+.star {
+    cursor: pointer;
+    font-size: 40px;
+    color: #ccc;
+  }
+  
+  .filled {
+    color: orange;
+  }
+
+  .star:hover,
+.filled:hover {
+  color: orange;
+}
+
+
+  .custom-orange-red {
+    background-color: orangered;
+  }
+
+  .custom-orange-red:hover {
+    background-color: rgb(255, 82, 2);
+    color: white;
+    box-shadow: 2px 2px 6px black;
+  }
+  
+  /* .star-hover {
+    color: orange;
+  } */
+  
+
+  form .input-box input{
+    height: 100%;
+    width: fit-content;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-weight: 400;
+    box-shadow: 1px 1px 2px orangered ;
+    color: #333;
+    border: 1.5px solid #C7BEBE;
+    border-bottom-width: 2.5px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+  
+  form .control textarea{
+    height: 100%;
+    width: fit-content;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-weight: 400;
+    box-shadow: 1px 1px 2px orangered ;
+    color: #333;
+    border: 1.5px solid #C7BEBE;
+    border-bottom-width: 2.5px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+  

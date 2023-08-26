@@ -1,0 +1,62 @@
+
+<div class="carousel-container">
+    <!--  Carosel buttons -->
+    <div class="carousel-buttons" style="display: flex; justify-content: right;">
+  
+      <input type="radio" id="radio" name="carousel-radio" [checked]="currentSlide === 0" (change)="setCurrentSlide(0)">
+      &nbsp;
+      <input type="radio" id="radio" name="carousel-radio" [checked]="currentSlide === 1" (change)="setCurrentSlide(1)">
+      &nbsp;
+      <input type="radio" id="radio" name="carousel-radio" [checked]="currentSlide === 2" (change)="setCurrentSlide(2)">
+      
+    </div>
+  <div>
+    <p style="color: orangered;font-size: x-small;font-weight: bolder;">Related Product</p>
+  </div>
+    <div class="carousel-track">
+      <!-- Carosel -->
+      <ng-container *ngFor="let slide of carouselItemsChunks; let i = index">
+        <div class="carousel-slide">
+          <div class="product-row row">
+            <div class="product-card col-lg-12 col-md-12 col-sm-12 mx-auto" *ngFor="let product of slide" >
+              <!-- ************************************************************************ -->
+              <div class="product-card " (click)="NavigateToprodDetails(product)" *ngIf="product">
+                  <!--   product card  -->
+                  <div class="product-discount" >
+                    <!-- <p>OFF {{ product.discount | formatDiscount }}</p> -->
+                  </div>
+
+                  <div class="row">
+                  <div class="product-photo mb-2 col-4" style="height: fit-content;">
+                    <img [src]="product.image" class="card-img-top" alt="Product Image" />
+                  </div>
+                  <div class="col-8 ">
+                  <div class="product-name mx-auto">
+                    <p>{{ product.productNameEN}}</p>
+                  </div>
+                  <div class="product-rating mx-auto">
+                    <ng-container *ngIf="product.rating !== undefined; else noRating">
+                      <ng-container *ngFor="let star of getColoredStars(product.rating)">
+                        <span class="star" [class.filled]="star === 1">&#9733;</span>
+                      </ng-container>
+                    </ng-container>
+                    <ng-template #noRating>
+                      <ng-container *ngFor="let star of getColoredStars(0)">
+                        <span class="star">&#9733;</span>
+                      </ng-container>
+                    </ng-template>
+                  </div>
+                  <div class="product-price mx-auto">
+                    <p>{{ product.price }}</p>
+                  </div>
+                </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+            <!-- ************************************************************************ -->
+  
+        </div>
+      </ng-container>
+    </div>
+  </div>

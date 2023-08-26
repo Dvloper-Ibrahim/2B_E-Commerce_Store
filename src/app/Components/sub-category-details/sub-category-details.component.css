@@ -1,0 +1,120 @@
+
+
+
+p {
+    font-size: xx-small;
+  
+   }
+  
+   button {
+    font-size: small;
+   }
+   .card{
+    width: 100%;
+    height: 100%;
+  
+   }
+
+.back{
+  list-style: none;
+}
+.back:hover {
+  color:orangered
+}
+   /* ******************************** */
+
+span{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight:lighter;
+}
+
+  .menu a span {
+    font-size: xx-small;
+  }
+
+ p {
+    
+    color:rgb(37, 36, 36);
+    line-height: 1px;   
+  }
+
+  a{
+    text-decoration: none;
+    color:rgb(37, 36, 36);
+  }
+  
+  a:hover {
+font-weight: bolder;
+cursor: pointer;
+  }
+
+  ul li a{
+    font-size: xx-small;
+  }
+
+ li  {
+    line-height: 1;   
+  }
+
+ li a:hover {
+    font-size: bolder;
+    color:orange;
+  }
+
+  p a:hover {
+    font-size: bolder;
+    color:orange;
+  }
+
+  p:hover {
+    color:orange;
+    font-size: bolder;
+    cursor: pointer;
+  }
+
+   /* Brand filter  */
+
+   .arrow {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 4px 4px 0;
+    margin-left: 5px;
+  }
+  
+  .up {
+    border-color: #000 transparent transparent transparent;
+  }
+  
+  .down {
+    border-color: transparent transparent #000 transparent;
+  }
+  
+  /* FILTER PRICE  */
+
+/* Customize the hover and border color for the Apply Price button */
+.apply-button:hover,
+.apply-button:focus {
+  background-color: #ff6600;
+  border-color: #ff6600;
+}
+
+/* Customize the hover and border color for the Reset Price button */
+.reset-button:hover,
+.reset-button:focus {
+  background-color: #ff6600;
+  border-color: #ff6600;
+}
+
+.apply-button,.reset-button{
+  border: 1px solid #ff6600;
+  color: black;
+  font-size: x-small;
+  font-weight: bold;
+}
+
+#price .form p {
+  font-weight: lighter;
+}
+  
