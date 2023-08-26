@@ -1,0 +1,125 @@
+<div class="container mx-auto mb-3">
+
+    <div class="row mx-auto">
+
+        <h3 style="color: #ff6600;margin-bottom: 5px;">MY ACCOUNT</h3>
+
+     <!-- Sidebar Menu -->
+     <div id="sideDiv" class="container-filter col-lg-2 col-md-2 col-sm-12 mx-auto m-0 " style="border: 1px solid rgb(212, 206, 206);border-radius: 5px;" >
+        <pre></pre>
+     <a type="button btn-lg" href="/cart" class="text-center">GO TO CART</a>
+     <a type="button btn-lg" href="/checkout" class="text-center">GO TO CHEKOUT</a>
+     <a type="button btn-lg" href="/home/wishList" class="text-center">GO TO WISH LIST</a>
+     <a type="button btn-lg" href="/home" class="text-center">GO TO HOME</a>
+     <pre></pre>
+
+
+    </div>
+
+
+    <!-- ******** MAIN DEV ********* -->
+
+    <div class="container col-lg-10 col-md-12 col-sm-12 mx-auto">
+
+        <h5 style="color: #5c5b5b;">Account Information</h5>
+
+       <div class="row mx-auto d-flex justify-content-between">
+        <div class="card border-dark mb-3 col-6 m-2 col-sm-12 " style="max-width: 18rem;">
+            <div class="card-header">CONTACT INFORMATION</div>
+            <div class="card-body text-dark">
+              <h5 class="card-title" *ngIf="isAuthorized" style="color: #777;">
+                {{ currentUser?.unique_name }}
+             </h5>
+             <h6 class="card-title" *ngIf="isAuthorized" style="color: #777;">
+               E-mail: {{ currentUser?.email }}
+             </h6>
+             <!-- <h6 class="card-title" *ngIf="isAuthorized" style="color: #777;">
+              Phone:  {{ currentUser?.phoneNumber }}
+             </h6> -->
+             <div class="card-footer mt-3">
+                <span class="d-flex justify-content-between">
+                    <a >EDIT</a>
+                    <a>CHANGE PASSWORD</a>
+                </span>
+             </div>
+            </div>
+          <!-- <div class="card border-dark mb-3 col-6 m-2 col-sm-12" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body text-dark">
+              <h5 class="card-title">Dark card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div> -->
+          </div>
+
+          <!-- <div class="card border-dark mb-3 col-6 m-2 col-sm-12 " style="max-width: 18rem;">
+            <div class="card-header">CONTACT INFORMATION</div>
+            <div class="card-body text-dark">
+               <button>DELETE MY </button>
+            </div> -->
+
+            <!-- <div class="card border-dark mb-3 col-6 m-2 col-sm-12" style="max-width: 18rem;">
+              <div class="card-header">DELETE ACCOUNT</div>
+              <div class="card-body text-dark mx-auto">
+                <button class="btn btn-danger" (click)="showDeleteConfirmation = true; deleteButtonDisabled = true"  *ngIf="!showDeleteConfirmation">DELETE MY ACCOUNT</button>
+                <div *ngIf="showDeleteConfirmation">
+                  <p>Are you sure you want to delete your account?</p>
+                  <button class="btn btn-danger" (click)="deleteAccount()">Delete</button>
+                  &nbsp; &nbsp;
+                  <button class="btn btn-success" (click)="cancelDelete()">Cancel</button>
+                </div>
+              </div>
+            </div> -->
+
+        </div>
+          <!-- ************* ORDER ************* -->
+
+          <div class="row mx-auto d-flex justify-content-between">
+            <div class="card border-dark mb-3 col-12 m-2 col-sm-12" style="width: 100%;">
+              <div class="card-header">YOUR RECENT ORDER IN CART</div>
+              <div>
+                <ng-container *ngIf="cartItems.length > 0; else emptyCart" >
+                  <!-- Loop through cart items and display card details -->
+                  <div class="container-fluid mt-20">
+                    <!-- Your card template goes here -->
+                    <div class="card mb-1 mt-1 " style="border-radius: 0;border: 1px solid #777;border-radius: 5px;" *ngFor="let item of cartItems; let i = index">
+                      <div class="row">
+                        <div class="col-12">
+                          <table class="table table-bordered">
+                            <tbody>
+                              <tr>
+                                <td class="col-1 text-center">
+                                  <img [src]="item.image" class="card-img-top" alt="Product Image" style="width: 50px;" />
+                                </td>
+                                <td class="col-6 text-center">
+                                  <a [routerLink]="'/product/' + item.id" id="productName" style="font-size: x-small;text-decoration: none;color: black;">
+                                    <span class="card-title" style="font-size: x-small;text-decoration: none;">{{ item.name | translate}}</span>
+                                  </a>
+                                </td>
+                                <td class="col-4 text-center">
+                                  <span class="card-text" style="font-size: x-small;">{{"Price: " | translate}} {{ item.price | currency: "EGP" }}</span>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </ng-container>
+
+                <!-- If cartItems is empty, show this message -->
+                <ng-template #emptyCart>
+                  <div class="container">
+                    <div class="text-center mt-2 mb-3" style="color: #777;">{{"You have no items in your shopping cart." | translate}}</div>
+                  </div>
+                </ng-template>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- ------------------------------------------  -->
+       </div>
+    </div>
+
+</div>

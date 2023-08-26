@@ -1,0 +1,222 @@
+*:lang(ar){
+
+  flex-direction: row-reverse;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  
+  
+  
+  
+  .right-div {
+    flex: 1;
+    margin: 5px;
+    margin-bottom: 5px;
+    height: 950px;
+    border-radius: 10px;
+  }
+  
+
+
+  .left-div {
+    flex: 3;
+    background-color: #fffefe;
+    margin: 5px;
+    margin-bottom: 15px;
+    padding: 15px;
+    height: 1000px; 
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px #ddd;
+    border: 1px solid gainsboro;
+    overflow-y: auto ;
+    position: relative;
+  }
+
+  .left-div::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .right {
+    position: sticky;
+    background-color: #fffefe;
+    padding: 5px;
+    margin: 5px;
+    height: 300px;
+    border-radius: 10px;
+    top: 70px;
+    box-shadow: 0px 0px 5px 0px #ddd;
+    border:1px solid gainsboro;
+  }
+
+  @media (max-width:1086px){
+    .right{
+        top:115px
+    }
+  }
+  
+  .Cart>.right-div>.right>.CartSummary {
+    text-align: center;
+    height: 50px;
+    margin: 10px;
+    padding: 15px;
+    background-color: #fffefe;
+    padding: 15px;
+    font: Arial Black bolder 50px ;
+    border-bottom: black 1px solid ;
+  }
+  
+  .Cart>.right-div>.right>.SubTotal {
+    margin: 10px;
+    height: 50px;
+    background-color: #fffefe;
+    padding: 15px;
+    border-bottom: black 1px solid ;
+  }
+  
+  .Cart>.right-div>.right>.logoCart {
+    margin: 10px;
+    height: 75px;
+    background-color: #fffefe;
+    padding: 15px;
+    border-bottom: black 1px solid  ;
+    font: italic 26px distinct;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    
+  }
+  
+  .Cart>.right-div>.right>.logoCart>a {
+    font: italic 26px distinct;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    transition: .5s;
+  }
+  
+  .Cart>.right-div>.right>.logoCart>a:hover {
+    color: #f16161;
+  }
+  
+  
+  
+  .Cart>.right-div>.right>.CheckOut {
+    margin: 0px 10px 0 10px;
+    height: 100px;
+    padding: 15px;
+    border-radius: 10px ;
+    background-color: #f16161;
+    color: white;
+    transition: .5s;
+    align-items: center;
+    
+  
+  }
+  
+  .Cart>.right-div>.right>.CheckOut:hover{
+    background-color: #b52222
+  }
+  
+  .Cart>.right-div>.right>.CheckOut>p{
+    font: Arial Black bolder 26px ;
+    font-weight: bolder;
+    transition: .5s;
+  }
+  
+  .Cart>.right-div>.right>.CheckOut>p:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+  }
+
+
+  /* ************************************ */
+
+  /* button cart to check out  */
+
+
+
+.btn span {
+    flex-wrap: nowrap;
+}
+  
+  #checkOut {
+    /* color: #ffffff;  */
+    background-color: #ff6600; 
+    border-color: #ff6600; 
+    border-radius:0;
+  }
+  
+
+ button span {
+  font-size: small;
+  color:#201b1b;
+  flex-wrap: nowrap;
+  font-weight: bolder;
+ }
+ 
+ button:hover > span {
+    color:#ebe8e1;
+   }
+
+  /* ******************************************** */
+
+  th{
+    font-weight:normal;
+    font-size: small;
+    color: #777;
+  }
+
+  @media (max-width:786px) {
+    tr>.price,.qty,.subtotal{
+        display: flex;
+        justify-content: space-around;
+    }
+  }
+
+  #productName{
+    text-decoration: none;
+    color: orangered;
+  }
+
+  #productName:hover{
+    text-decoration: underline;
+  }
+
+ 
+ /* @media (max-width:768){
+  #headerTable{
+       display: none;
+  }
+} */
+
+.btn-danger{
+    border-radius:3px;
+    width: 20px;
+    background-color: transparent;
+    border: none;
+}
+
+.btn-danger i{
+   font-size: medium;
+   color: black;
+}
+
+.btn-danger i:hover {
+    color: #ff6600;
+}
+
+#linkToHome{
+  text-decoration: none;
+  color: #ff6600;
+}
+#linkToHome:hover{
+  text-decoration: solid;
+}
+
+
+

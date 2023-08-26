@@ -1,0 +1,54 @@
+<!-- <div class="container-fluid"> -->
+<!-- </div> -->
+<div class="container">
+  <div class="sign-in my-5">
+    <form #signInUserForm="ngForm" (ngSubmit)="signIn()">
+      <h3 class="text-center mb-3">{{ "Sign In" | translate }}</h3>
+      <div
+        class="fw-bold my-2"
+        *ngIf="loginMessage"
+        [ngClass]="{
+          'text-success': successLogin,
+          'text-danger': !successLogin
+        }"
+      >
+        {{ loginMessage | translate }}
+      </div>
+      <!-- <div class="text-danger fw-bold my-2" *ngIf="!signedIn && loginMessage">
+        {{ loginMessage }}
+      </div> -->
+      <div class="mb-3">
+        <input
+          type="text"
+          class="form-control"
+          [placeholder]="'Enter email or username' | translate"
+          name="userName"
+          [(ngModel)]="user.userName"
+          required
+        />
+      </div>
+      <div class="mb-3 position-relative">
+        <input
+          type="password"
+          class="form-control"
+          [placeholder]="'Enter password' | translate"
+          name="password"
+          [(ngModel)]="user.password"
+          required
+          #password
+        />
+        <i
+          class="bx bx-hide show-hide"
+          #passwrdButton
+          (click)="showAndHide(passwrdButton, password)"
+        ></i>
+      </div>
+      <button
+        [disabled]="signInUserForm.invalid"
+        class="text-uppercase btn btn-success"
+      >
+        {{ "sign in" | translate }}
+      </button>
+    </form>
+  </div>
+</div>
