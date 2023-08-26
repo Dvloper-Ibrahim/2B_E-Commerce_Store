@@ -43,7 +43,6 @@ namespace _2B_Store.MVC
             builder.Services.AddScoped<IShippingRepository, ShippingRepository>();
             builder.Services.AddScoped<IPaymentRepository, PaymentRepository>();
 
-
             builder.Services.AddScoped<ICategoryServices, CategoryServices>();
             builder.Services.AddScoped<ISubCategoryServices, SubCategoryServices>();
             builder.Services.AddScoped<IProductServices, ProductServices>();

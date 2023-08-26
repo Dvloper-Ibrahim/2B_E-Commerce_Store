@@ -9,7 +9,7 @@ using AutoMapper;
 
 namespace _2B_Store.MVC.Controllers
 {
-    //[Authorize(Roles = "Admin")]
+    [Authorize(Roles = "Sup_Admin")]
     public class RolesController : Controller
     {
         private readonly RoleManager<IdentityRole> roleManager;

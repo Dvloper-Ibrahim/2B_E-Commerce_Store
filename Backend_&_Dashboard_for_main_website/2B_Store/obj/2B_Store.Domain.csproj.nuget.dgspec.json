@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Test\\2B_Store\\Backend_&_Dashboard for main website\\2B_Store\\2B_Store.Domain.csproj": {}
+    "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store\\2B_Store.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Test\\2B_Store\\Backend_&_Dashboard for main website\\2B_Store\\2B_Store.Domain.csproj": {
+    "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store\\2B_Store.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Test\\2B_Store\\Backend_&_Dashboard for main website\\2B_Store\\2B_Store.Domain.csproj",
+        "projectUniqueName": "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store\\2B_Store.Domain.csproj",
         "projectName": "2B_Store.Domain",
-        "projectPath": "C:\\Test\\2B_Store\\Backend_&_Dashboard for main website\\2B_Store\\2B_Store.Domain.csproj",
+        "projectPath": "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store\\2B_Store.Domain.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Test\\2B_Store\\Backend_&_Dashboard for main website\\2B_Store\\obj\\",
+        "outputPath": "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -66,6 +66,11 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
         }
       }
     }

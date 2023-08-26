@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dkM3uB/8ErIrJw3nu+X0WkM8mM9aD5Y7ajlXAeiDaSnQiTgZf2FlO9sIHzxbswAKHSnWXZC5y8WAA+RYxRcGIg==",
+  "dgSpecHash": "wwLy20dGqgcKGlvwDX3NSIwixBlwooEoydH8FUH4ATKUFtL5pu2wPQWTkSHBJgw0AF6fuL2mEGzu7l9th6hEbg==",
   "success": true,
-  "projectFilePath": "C:\\Test\\2B_Store\\Backend_&_Dashboard for main website\\2B_Store.WepApi\\2B_Store.WepApi.csproj",
+  "projectFilePath": "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store.WepApi\\2B_Store.WepApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DELL\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

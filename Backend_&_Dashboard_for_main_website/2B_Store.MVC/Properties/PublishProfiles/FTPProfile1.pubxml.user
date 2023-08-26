@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAgxNQhOW0QkySkbAw0kwnYAAAAAACAAAAAAAQZgAAAAEAACAAAAC0WTuTB8gdGIiFTqhnwJ4Vfe2H/syAKN54ZnV4nYME1gAAAAAOgAAAAAIAACAAAADfNGoMT5XlElMcYy9zzCA7B3Ft7ru0jPCDKAjN5DeN1SAAAABkaHS9rV/lfeCPWd7SoYtRCtIC2WV9eORYessuABbAf0AAAABwEj9RQtBvGPA1a754AIZKga7Y4/Zh5AEHmCpi8N44YuGe92j38Qjl0/QQWS5ZsdHOmCCYezWSnAMjXltHBfaV</EncryptedPassword>
+    <_PublishTargetUrl>ftp://ITI2Bstoredashboard.somee.com/www.ITI2Bstoredashboard.somee.com</_PublishTargetUrl>
+    <History>False|2023-08-25T16:00:36.2184708Z;False|2023-08-25T04:43:56.5209568+03:00;False|2023-08-25T04:21:21.9560000+03:00;False|2023-08-25T04:10:10.3942251+03:00;False|2023-08-25T04:00:16.3857870+03:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="2B_Store.Application.dll">
+      <publishTime>08/25/2023 03:29:42</publishTime>
+    </File>
+    <File Include="2B_Store.Application.pdb">
+      <publishTime>08/25/2023 03:29:42</publishTime>
+    </File>
+    <File Include="2B_Store.Context.pdb">
+      <publishTime>08/25/2023 03:29:43</publishTime>
+    </File>
+    <File Include="2B_Store.Domain.dll">
+      <publishTime>08/25/2023 03:29:39</publishTime>
+    </File>
+    <File Include="2B_Store.Domain.pdb">
+      <publishTime>08/25/2023 03:29:39</publishTime>
+    </File>
+    <File Include="2B_Store.DTO.dll">
+      <publishTime>08/25/2023 03:29:41</publishTime>
+    </File>
+    <File Include="2B_Store.Infrastructure.pdb">
+      <publishTime>08/25/2023 03:29:45</publishTime>
+    </File>
+    <File Include="2B_Store.MVC.deps.json">
+      <publishTime>08/25/2023 18:51:29</publishTime>
+    </File>
+    <File Include="2B_Store.MVC.dll">
+      <publishTime>08/25/2023 18:51:22</publishTime>
+    </File>
+    <File Include="2B_Store.MVC.runtimeconfig.json">
+      <publishTime>08/25/2023 03:30:48</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
