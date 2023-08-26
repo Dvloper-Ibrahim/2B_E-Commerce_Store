@@ -1,7 +1,0 @@
-#icon{
-    transition: opacity .5s ease-in-out;
-}
-
-#icon :hover {
-    transform: scale(1.05);
-}
