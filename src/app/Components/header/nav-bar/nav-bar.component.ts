@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 
 import { ProductsPagesService } from 'src/app/services/products-pages.service';
 import 'bootstrap';
-import 'jquery/dist/jquery.min.js';
+// import 'jquery/dist/jquery.min.js';
 // import { IProductsPages } from 'src/Model/i-products-pages';
 // import { SideMenuNavbarService } from 'src/app/services/side-menu-navbar.service';
 import { ICategory } from 'src/Model/i-category';
@@ -102,7 +102,7 @@ export class NavBarComponent implements OnInit {
     return subSubCategories;
   }
 
-  
+
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(event: any) {
     if (window.scrollY > this.distanncY) {
@@ -153,8 +153,8 @@ export class NavBarComponent implements OnInit {
       detailsArrow?.classList.remove('active');
     }
   }
-  
-  
+
+
   refreshPage() {
     location.reload();
   }
@@ -193,5 +193,5 @@ export class NavBarComponent implements OnInit {
       // location.assign(`/home/searchResult?query=${this.searchQuery}`)
     }
   }
-  
+
 }

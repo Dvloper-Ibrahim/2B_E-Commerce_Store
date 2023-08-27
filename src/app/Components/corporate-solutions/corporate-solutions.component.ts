@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import 'bootstrap';
-import 'jquery/dist/jquery.min.js';
+// import 'bootstrap';
+// import 'jquery/dist/jquery.min.js';
 
 @Component({
   selector: 'app-corporate-solutions',

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import 'bootstrap';
-import 'jquery/dist/jquery.min.js';
+// import 'jquery/dist/jquery.min.js';
 
 @Component({
   selector: 'app-section3-icon',
@@ -9,5 +9,5 @@ import 'jquery/dist/jquery.min.js';
 })
 export class Section3IconComponent {
   localLang: string | null = localStorage.getItem("myLang");
-  
+
 }

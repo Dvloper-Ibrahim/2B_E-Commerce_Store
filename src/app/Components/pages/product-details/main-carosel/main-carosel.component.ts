@@ -3,7 +3,7 @@ import { ProductsPagesService } from 'src/app/services/products-pages.service';
 import {  Router } from '@angular/router';
 import { ProductFilterService } from 'src/app/services/product-filter.service';
 import 'bootstrap';
-import 'jquery/dist/jquery.min.js';
+// import 'jquery/dist/jquery.min.js';
 import { IProduct } from 'src/Model/i-product';
 import { environment } from 'src/environments/environment.development';
 @Component({
@@ -13,7 +13,7 @@ import { environment } from 'src/environments/environment.development';
 })
 export class MainCaroselComponent implements OnInit {
 
-  @Input() AllProduct: IProduct[] = []; 
+  @Input() AllProduct: IProduct[] = [];
   product: any;
   brands: string[] = [];
   selectedBrands: string[] = [];
@@ -38,8 +38,8 @@ localLang: string | null = localStorage.getItem('myLang');
         prod.name = this.localLang == "ar" ? prod.productNameAR : prod.productNameEN
       })
       this.AllProduct = data;
-      this.chunkCarouselItems(); 
-      this.setCurrentSlide(0); 
+      this.chunkCarouselItems();
+      this.setCurrentSlide(0);
     });
 
     // this.productFilterService.filterBySubCategoryId(this.AllProduct, this.selectedsubCategoryId);
@@ -50,14 +50,14 @@ localLang: string | null = localStorage.getItem('myLang');
     this.AllProduct = this.AllProduct.filter(p => p.subcategoryId == id);
     this.chunkCarouselItems()
   }
-  
-  
+
+
   addToCart(product: any) {
     console.log('Added to cart:', product);
   }
- 
 
-  
+
+
 // ****************************************************
 
 
@@ -75,7 +75,7 @@ chunkCarouselItems() {
   this.currentSlide = index;
   this.chunkCarouselItems();
 }
- 
+
 
 
 
@@ -100,7 +100,7 @@ onBrandCheckboxChange() {
 
 showBrandMenu: boolean = false;
 
-// Rating 
+// Rating
 
 getColoredStars(rating: number): number[] {
   const filledStars = Math.floor(rating);
@@ -122,7 +122,7 @@ prodId=0;
 
           this.router.navigate(['/product', product.id])
                     .then(() => {
-                      // refresh the page after click new product 
+                      // refresh the page after click new product
                       window.location.reload();
                     })
         },

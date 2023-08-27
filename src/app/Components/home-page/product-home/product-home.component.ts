@@ -2,7 +2,7 @@ import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import { ProductsPagesService } from 'src/app/services/products-pages.service';
 import { Router } from '@angular/router';
 import 'bootstrap';
-import 'jquery/dist/jquery.min.js';
+// import 'jquery/dist/jquery.min.js';
 import { IProductsPages } from 'src/Model/i-products-pages';
 import { CartService } from 'src/app/services/cart.service';
 import { WishListService } from 'src/app/services/wish-list.service';
@@ -21,11 +21,11 @@ export class ProductHomeComponent implements OnInit {
   brands: string[] = [];
   selectedBrands: string[] = [];
   discount:number = 14;
-  @Input() categoryId!: number; 
-  @Input() subCategoryId!: number; 
+  @Input() categoryId!: number;
+  @Input() subCategoryId!: number;
   localLang: string | null = localStorage.getItem("myLang");
 
-  constructor(private productApiPages: ProductsPagesService , 
+  constructor(private productApiPages: ProductsPagesService ,
     private router: Router, private cartService : CartService,
     private wishListService : WishListService){}
 
@@ -82,12 +82,12 @@ export class ProductHomeComponent implements OnInit {
   addToCart(product: any) {
     try {
       let newPrice: number | undefined = undefined;
-  
+
       // if theres dicount
       if (product.discount) {
         newPrice = product.price * ((100 - product.discount) * 0.01);
       }
-  
+
       this.cartService.addToCart(product, newPrice);
       this.successMessage = `Added ${product.name} to cart successfully!`;
       alert(this.successMessage);
@@ -96,8 +96,8 @@ export class ProductHomeComponent implements OnInit {
       alert(this.successMessage);
     }
   }
- 
-     // Wish List 
+
+     // Wish List
 
      addToWishList(product: any) {
       try {
@@ -110,7 +110,7 @@ export class ProductHomeComponent implements OnInit {
       }
     }
 
-  
+
 // ****************************************************
 
 // handel scroll in card products
@@ -119,7 +119,7 @@ export class ProductHomeComponent implements OnInit {
 
 
 handleCardClick(event: MouseEvent, product: any, isLeftClick: boolean = true) {
-  // implement the order on click card 
+  // implement the order on click card
   console.log('Clicked on card:', product);
 
   const cardElement = (event.target as HTMLElement).closest('.card');
@@ -169,7 +169,7 @@ toggleBrandMenu() {
 
 showBrandMenu: boolean = false;
 
-// Rating 
+// Rating
 
 getColoredStars(rating: number): number[] {
   const filledStars = Math.floor(rating);

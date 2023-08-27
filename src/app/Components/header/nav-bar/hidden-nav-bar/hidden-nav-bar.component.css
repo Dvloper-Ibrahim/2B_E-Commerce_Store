@@ -1,20 +1,20 @@
 .hiddenNavBar:lang(ar){
-   
+
     display: flex;
     justify-content: flex-start;
     /* padding-left: 198px !important; */
-  
+
   }
 
 .navbar-ul:lang(ar){
   justify-content: flex-end;
-} 
+}
 .navbar-ul li{
   margin-bottom: 10px !important;
-} 
+}
 .dropdown-menu{
     background-color:black;
-   
+
 }
 
 span .btn:lang(ar){
@@ -28,7 +28,7 @@ li {
      color:orange;
      background-color:transparent;
   }
-  
+
   ul li a {
     font-size: x-small;
     font-weight: bold;
@@ -40,34 +40,34 @@ li {
     color:black;
     font-weight:bold;
   }
-  
+
 .dropdown-item{
     padding-left: 0;
 }
-  
+
   ul li a {
     text-decoration:none;
     padding-left: 0;
     color: white;
   }
-  
+
   li{
     list-style-type: none;
     border-bottom: 1 px solid orangered;
   }
-  
+
   .dropdown-menu ul li a {
     padding-left: -50px;
   }
-  
+
   ul {
     padding-left: 0;
   }
-  
+
   .col-md-6  {
     padding-left: 0;
   }
-  
+
   a span {
     color: orangered;
     border-bottom:1 px double orange;
@@ -84,7 +84,7 @@ li {
     height: 2.5px;
     vertical-align: middle;
   }
-  
+
    .cart::before {
     content: "";
     position: absolute;
@@ -108,7 +108,7 @@ li {
     place-content: center;
     border-radius: 0;
   }
-  
+
    .cart .dropdown-div.active {
     display: flex !important;
   }
@@ -129,15 +129,15 @@ li {
 }
 
 .button-cart:hover {
-  color: #ffffff; 
-  background-color: #ff6600; 
-  border-color: #ff6600; 
+  color: #ffffff;
+  background-color: #ff6600;
+  border-color: #ff6600;
 }
 
 .button-cart:hover {
-  color: #ffffff; 
-  background-color: #ff6600; 
-  border-color: #ff6600; 
+  color: #ffffff;
+  background-color: #ff6600;
+  border-color: #ff6600;
   border-radius:0;
 }
 
@@ -155,20 +155,20 @@ li {
 
 /* Nav Bar scroll in menue  */
 ::-webkit-scrollbar {
-  width: 8px; 
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #3a3a3a; 
+  background: #3a3a3a;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ff6600b4; 
-  border-radius: 10px; 
+  background: #ff6600b4;
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #ff6600; 
+  background: #ff6600;
 }
 
 /* ----------------------------------  */
@@ -211,7 +211,7 @@ color: #ff6600;
 
 .signing-links:lang(ar){
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 /* ======================================= */

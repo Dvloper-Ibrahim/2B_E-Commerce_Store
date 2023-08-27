@@ -2,13 +2,13 @@
 
 .dropdown:hover .dropdown-menu {
     display:flex;
-  } 
+  }
 
   /* *:lang(ar){
     flex-direction: row-reverse;
   } */
 
-  .dropdown-menu:lang(ar), 
+  .dropdown-menu:lang(ar),
   .dropdown-item:lang(ar),
    .nav-fill:lang(ar)
   {
@@ -16,10 +16,10 @@
   }
 
   #mainBar:lang(ar) {
-    flex-direction: column-reverse; 
-    flex-direction: row-reverse; 
+    flex-direction: column-reverse;
+    flex-direction: row-reverse;
   }
-  
+
   #cartInNav:lang(ar) {
     justify-content: flex-end;
   }
@@ -47,7 +47,7 @@
     direction: ltr;
     z-index: 9999;
   } */
-  
+
 .nav-item .nav-link {
   padding-left: 1px;
   margin-right: 1px;
@@ -112,7 +112,7 @@ ul li a {
 
 #cartInNav{
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 #cartInNav{
@@ -485,8 +485,8 @@ body {
 }
 
 .button-cart:hover {
-  color: #ffffff; 
-  background-color: #ff6600; 
-  border-color: #ff6600; 
+  color: #ffffff;
+  background-color: #ff6600;
+  border-color: #ff6600;
 }
 

@@ -2,7 +2,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ProductsPagesService } from 'src/app/services/products-pages.service';
 import 'bootstrap';
-import 'jquery/dist/jquery.min.js';
+// import 'jquery/dist/jquery.min.js';
 import { CartService } from 'src/app/services/cart.service';
 import { IProduct } from 'src/Model/i-product';
 import { UserService } from 'src/app/services/user.service';
@@ -53,13 +53,13 @@ export class HeaderComponent implements OnInit {
   onDocumentClick(event: MouseEvent) {
     const cartDetails = document.querySelector('.dropdown-div');
     const detailsArrow = document.querySelector('.dropdown-arrow');
-    
+
     if (cartDetails?.classList.contains('active') && detailsArrow?.classList.contains('active')) {
       const clickedElement = event.target as HTMLElement;
       const isCartElement = clickedElement.classList.contains('cart') ||
         clickedElement.classList.contains('items-num') ||
         clickedElement.classList.contains('fa-cart-plus');
-      
+
       if (!isCartElement) {
         cartDetails.classList.remove('active');
         detailsArrow.classList.remove('active');
@@ -146,7 +146,7 @@ search(): void {
     // console.log(localStorage.getItem("myLang"));
     location.reload();
   }
-  
+
   toggleMenu() {
     let menu = document.querySelector('ul.menu');
     menu?.classList.contains('active')
