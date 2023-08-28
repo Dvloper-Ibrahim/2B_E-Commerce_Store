@@ -1,0 +1,68 @@
+D:\ITI_SOHAG\Graduation_Project\2B_Store\2B_Store.Context\bin\Debug\net7.0\2B_Store.Context.deps.json
+D:\ITI_SOHAG\Graduation_Project\2B_Store\2B_Store.Context\bin\Debug\net7.0\2B_Store.Context.runtimeconfig.json
+D:\ITI_SOHAG\Graduation_Project\2B_Store\2B_Store.Context\bin\Debug\net7.0\2B_Store.Context.dll
+D:\ITI_SOHAG\Graduation_Project\2B_Store\2B_Store.Context\bin\Debug\net7.0\2B_Store.Context.pdb
+D:\ITI_SOHAG\Graduation_Project\2B_Store\2B_Store.Context\bin\Debug\net7.0\2B_Store.Domain.dll
+D:\ITI_SOHAG\Graduation_Project\2B_Store\2B_Store.Context\bin\Debug\net7.0\2B_Store.Domain.pdb
+D:\ITI_SOHAG\Graduation_Project\2B_Store\2B_Store.Context\obj\Debug\net7.0\2B_Store.Context.csproj.AssemblyReference.cache
+D:\ITI_SOHAG\Graduation_Project\2B_Store\2B_Store.Context\obj\Debug\net7.0\2B_Store.Context.GeneratedMSBuildEditorConfig.editorconfig
+D:\ITI_SOHAG\Graduation_Project\2B_Store\2B_Store.Context\obj\Debug\net7.0\2B_Store.Context.AssemblyInfoInputs.cache
+D:\ITI_SOHAG\Graduation_Project\2B_Store\2B_Store.Context\obj\Debug\net7.0\2B_Store.Context.AssemblyInfo.cs
+D:\ITI_SOHAG\Graduation_Project\2B_Store\2B_Store.Context\obj\Debug\net7.0\2B_Store.Context.csproj.CoreCompileInputs.cache
+D:\ITI_SOHAG\Graduation_Project\2B_Store\2B_Store.Context\obj\Debug\net7.0\2B_Store.Context.csproj.CopyComplete
+D:\ITI_SOHAG\Graduation_Project\2B_Store\2B_Store.Context\obj\Debug\net7.0\2B_Store.Context.dll
+D:\ITI_SOHAG\Graduation_Project\2B_Store\2B_Store.Context\obj\Debug\net7.0\refint\2B_Store.Context.dll
+D:\ITI_SOHAG\Graduation_Project\2B_Store\2B_Store.Context\obj\Debug\net7.0\2B_Store.Context.pdb
+D:\ITI_SOHAG\Graduation_Project\2B_Store\2B_Store.Context\obj\Debug\net7.0\2B_Store.Context.genruntimeconfig.cache
+D:\ITI_SOHAG\Graduation_Project\2B_Store\2B_Store.Context\obj\Debug\net7.0\ref\2B_Store.Context.dll
+G:\ITI - 3 months - June 2023 - Sohag\Projects\Graduation Project\2B Store\Backend_&_Dashboard for main website\2B_Store.Context\bin\Debug\net7.0\2B_Store.Context.deps.json
+G:\ITI - 3 months - June 2023 - Sohag\Projects\Graduation Project\2B Store\Backend_&_Dashboard for main website\2B_Store.Context\bin\Debug\net7.0\2B_Store.Context.runtimeconfig.json
+G:\ITI - 3 months - June 2023 - Sohag\Projects\Graduation Project\2B Store\Backend_&_Dashboard for main website\2B_Store.Context\bin\Debug\net7.0\2B_Store.Context.dll
+G:\ITI - 3 months - June 2023 - Sohag\Projects\Graduation Project\2B Store\Backend_&_Dashboard for main website\2B_Store.Context\bin\Debug\net7.0\2B_Store.Context.pdb
+G:\ITI - 3 months - June 2023 - Sohag\Projects\Graduation Project\2B Store\Backend_&_Dashboard for main website\2B_Store.Context\bin\Debug\net7.0\2B_Store.Domain.dll
+G:\ITI - 3 months - June 2023 - Sohag\Projects\Graduation Project\2B Store\Backend_&_Dashboard for main website\2B_Store.Context\bin\Debug\net7.0\2B_Store.Domain.pdb
+G:\ITI - 3 months - June 2023 - Sohag\Projects\Graduation Project\2B Store\Backend_&_Dashboard for main website\2B_Store.Context\obj\Debug\net7.0\2B_Store.Context.csproj.AssemblyReference.cache
+G:\ITI - 3 months - June 2023 - Sohag\Projects\Graduation Project\2B Store\Backend_&_Dashboard for main website\2B_Store.Context\obj\Debug\net7.0\2B_Store.Context.GeneratedMSBuildEditorConfig.editorconfig
+G:\ITI - 3 months - June 2023 - Sohag\Projects\Graduation Project\2B Store\Backend_&_Dashboard for main website\2B_Store.Context\obj\Debug\net7.0\2B_Store.Context.AssemblyInfoInputs.cache
+G:\ITI - 3 months - June 2023 - Sohag\Projects\Graduation Project\2B Store\Backend_&_Dashboard for main website\2B_Store.Context\obj\Debug\net7.0\2B_Store.Context.AssemblyInfo.cs
+G:\ITI - 3 months - June 2023 - Sohag\Projects\Graduation Project\2B Store\Backend_&_Dashboard for main website\2B_Store.Context\obj\Debug\net7.0\2B_Store.Context.csproj.CoreCompileInputs.cache
+G:\ITI - 3 months - June 2023 - Sohag\Projects\Graduation Project\2B Store\Backend_&_Dashboard for main website\2B_Store.Context\obj\Debug\net7.0\2B_Store.Context.csproj.CopyComplete
+G:\ITI - 3 months - June 2023 - Sohag\Projects\Graduation Project\2B Store\Backend_&_Dashboard for main website\2B_Store.Context\obj\Debug\net7.0\2B_Store.Context.dll
+G:\ITI - 3 months - June 2023 - Sohag\Projects\Graduation Project\2B Store\Backend_&_Dashboard for main website\2B_Store.Context\obj\Debug\net7.0\refint\2B_Store.Context.dll
+G:\ITI - 3 months - June 2023 - Sohag\Projects\Graduation Project\2B Store\Backend_&_Dashboard for main website\2B_Store.Context\obj\Debug\net7.0\2B_Store.Context.pdb
+G:\ITI - 3 months - June 2023 - Sohag\Projects\Graduation Project\2B Store\Backend_&_Dashboard for main website\2B_Store.Context\obj\Debug\net7.0\2B_Store.Context.genruntimeconfig.cache
+G:\ITI - 3 months - June 2023 - Sohag\Projects\Graduation Project\2B Store\Backend_&_Dashboard for main website\2B_Store.Context\obj\Debug\net7.0\ref\2B_Store.Context.dll
+C:\Test\2B_Store\Backend_&_Dashboard for main website\2B_Store.Context\bin\Debug\net7.0\2B_Store.Context.deps.json
+C:\Test\2B_Store\Backend_&_Dashboard for main website\2B_Store.Context\bin\Debug\net7.0\2B_Store.Context.runtimeconfig.json
+C:\Test\2B_Store\Backend_&_Dashboard for main website\2B_Store.Context\bin\Debug\net7.0\2B_Store.Context.dll
+C:\Test\2B_Store\Backend_&_Dashboard for main website\2B_Store.Context\bin\Debug\net7.0\2B_Store.Context.pdb
+C:\Test\2B_Store\Backend_&_Dashboard for main website\2B_Store.Context\bin\Debug\net7.0\2B_Store.Domain.dll
+C:\Test\2B_Store\Backend_&_Dashboard for main website\2B_Store.Context\bin\Debug\net7.0\2B_Store.Domain.pdb
+C:\Test\2B_Store\Backend_&_Dashboard for main website\2B_Store.Context\obj\Debug\net7.0\2B_Store.Context.csproj.AssemblyReference.cache
+C:\Test\2B_Store\Backend_&_Dashboard for main website\2B_Store.Context\obj\Debug\net7.0\2B_Store.Context.GeneratedMSBuildEditorConfig.editorconfig
+C:\Test\2B_Store\Backend_&_Dashboard for main website\2B_Store.Context\obj\Debug\net7.0\2B_Store.Context.AssemblyInfoInputs.cache
+C:\Test\2B_Store\Backend_&_Dashboard for main website\2B_Store.Context\obj\Debug\net7.0\2B_Store.Context.AssemblyInfo.cs
+C:\Test\2B_Store\Backend_&_Dashboard for main website\2B_Store.Context\obj\Debug\net7.0\2B_Store.Context.csproj.CoreCompileInputs.cache
+C:\Test\2B_Store\Backend_&_Dashboard for main website\2B_Store.Context\obj\Debug\net7.0\2B_Store.Context.csproj.CopyComplete
+C:\Test\2B_Store\Backend_&_Dashboard for main website\2B_Store.Context\obj\Debug\net7.0\2B_Store.Context.dll
+C:\Test\2B_Store\Backend_&_Dashboard for main website\2B_Store.Context\obj\Debug\net7.0\refint\2B_Store.Context.dll
+C:\Test\2B_Store\Backend_&_Dashboard for main website\2B_Store.Context\obj\Debug\net7.0\2B_Store.Context.pdb
+C:\Test\2B_Store\Backend_&_Dashboard for main website\2B_Store.Context\obj\Debug\net7.0\2B_Store.Context.genruntimeconfig.cache
+C:\Test\2B_Store\Backend_&_Dashboard for main website\2B_Store.Context\obj\Debug\net7.0\ref\2B_Store.Context.dll
+G:\ITI - Graduation Project\Backend_&_Dashboard_for_main_website\2B_Store.Context\bin\Debug\net7.0\2B_Store.Context.deps.json
+G:\ITI - Graduation Project\Backend_&_Dashboard_for_main_website\2B_Store.Context\bin\Debug\net7.0\2B_Store.Context.runtimeconfig.json
+G:\ITI - Graduation Project\Backend_&_Dashboard_for_main_website\2B_Store.Context\bin\Debug\net7.0\2B_Store.Context.dll
+G:\ITI - Graduation Project\Backend_&_Dashboard_for_main_website\2B_Store.Context\bin\Debug\net7.0\2B_Store.Context.pdb
+G:\ITI - Graduation Project\Backend_&_Dashboard_for_main_website\2B_Store.Context\bin\Debug\net7.0\2B_Store.Domain.dll
+G:\ITI - Graduation Project\Backend_&_Dashboard_for_main_website\2B_Store.Context\bin\Debug\net7.0\2B_Store.Domain.pdb
+G:\ITI - Graduation Project\Backend_&_Dashboard_for_main_website\2B_Store.Context\obj\Debug\net7.0\2B_Store.Context.csproj.AssemblyReference.cache
+G:\ITI - Graduation Project\Backend_&_Dashboard_for_main_website\2B_Store.Context\obj\Debug\net7.0\2B_Store.Context.GeneratedMSBuildEditorConfig.editorconfig
+G:\ITI - Graduation Project\Backend_&_Dashboard_for_main_website\2B_Store.Context\obj\Debug\net7.0\2B_Store.Context.AssemblyInfoInputs.cache
+G:\ITI - Graduation Project\Backend_&_Dashboard_for_main_website\2B_Store.Context\obj\Debug\net7.0\2B_Store.Context.AssemblyInfo.cs
+G:\ITI - Graduation Project\Backend_&_Dashboard_for_main_website\2B_Store.Context\obj\Debug\net7.0\2B_Store.Context.csproj.CoreCompileInputs.cache
+G:\ITI - Graduation Project\Backend_&_Dashboard_for_main_website\2B_Store.Context\obj\Debug\net7.0\2B_Store.Context.csproj.CopyComplete
+G:\ITI - Graduation Project\Backend_&_Dashboard_for_main_website\2B_Store.Context\obj\Debug\net7.0\2B_Store.Context.dll
+G:\ITI - Graduation Project\Backend_&_Dashboard_for_main_website\2B_Store.Context\obj\Debug\net7.0\refint\2B_Store.Context.dll
+G:\ITI - Graduation Project\Backend_&_Dashboard_for_main_website\2B_Store.Context\obj\Debug\net7.0\2B_Store.Context.pdb
+G:\ITI - Graduation Project\Backend_&_Dashboard_for_main_website\2B_Store.Context\obj\Debug\net7.0\2B_Store.Context.genruntimeconfig.cache
+G:\ITI - Graduation Project\Backend_&_Dashboard_for_main_website\2B_Store.Context\obj\Debug\net7.0\ref\2B_Store.Context.dll

@@ -1,0 +1,68 @@
+﻿@*@model IEnumerable<_2B_Store.DTO.RoleDto>
+
+*@
+@using Microsoft.AspNetCore.Identity;
+@model IEnumerable<IdentityRole>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+@section PageTitle {
+    <title>2B - Admins</title>
+}
+
+<div class="container-fluid">
+    <h1>All Roles</h1>
+    <p>
+        <a asp-action="Create" class="btn btn-primary">Create New</a>
+    </p>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Id)
+                </th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Id)
+                    </td>
+                    <td>
+@*                        @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                        @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                        @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })*@
+                        <a asp-action="profile" asp-route-id="@item.Id" class="mt-1 btn btn-success">Edit</a>
+                        <a asp-action="details" asp-route-id="" class="mt-1 btn btn-primary">Details</a>
+                        <form asp-action="Delete" method="post" class="d-inline">
+                            @Html.AntiForgeryToken()
+                            <input type="hidden" name="id" value="@item.Id" />
+                            <button class="btn btn-danger mt-1" onclick="return confirm('Are you sure you want to delete this user?')">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@section Scripts {
+    <script>
+        let sideLinks = document.querySelectorAll(".side-nav");
+        sideLinks.forEach(e => e.classList.remove("active"));
+
+        let activeLink = document.getElementById("admins");
+        activeLink.classList.add("active");
+    </script>
+}

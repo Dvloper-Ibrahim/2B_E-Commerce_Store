@@ -1,0 +1,99 @@
+﻿@model ProductDTO
+@{
+    ViewData["Title"] = "Edit";
+    SelectList subCategList = new SelectList(Model.SubCategories, "Id", "NameEN");
+}
+
+@section PageTitle {
+    <title>2B - Products</title>
+}
+
+<div class="container-fluid">
+    <h2>Edit Product : @Model.ProductNameEN</h2>
+    <form method="post" class="py-3" enctype="multipart/form-data">
+        @*<div asp-validation-summary="All"></div>*@
+        <div>
+            <label asp-for="ProductNameEN" class="form-label"></label>
+            <input asp-for="ProductNameEN" class="form-control" />
+            <span asp-validation-for="ProductNameEN" class="form-text text-danger"></span>
+        </div>
+        <div class="mt-2">
+            <label asp-for="ProductNameAR" class="form-label"></label>
+            <input asp-for="ProductNameAR" class="form-control" />
+            <span asp-validation-for="ProductNameAR" class="form-text text-danger"></span>
+        </div>
+        <div class="mt-2">
+            <label asp-for="BrandEN" class="form-label"></label>
+            <input asp-for="BrandEN" class="form-control" />
+            <span asp-validation-for="BrandEN" class="form-text text-danger"></span>
+        </div>
+        <div class="mt-2">
+            <label asp-for="BrandAR" class="form-label"></label>
+            <input asp-for="BrandAR" class="form-control" />
+            <span asp-validation-for="BrandAR" class="form-text text-danger"></span>
+        </div>
+        <div class="mt-2">
+            <label asp-for="Price" class="form-label"></label>
+            <input asp-for="Price" class="form-control" type="number" />
+            <span asp-validation-for="Price" class="form-text text-danger"></span>
+        </div>
+        <div class="mt-2">
+            <label asp-for="Stock" class="form-label"></label>
+            <input asp-for="Stock" class="form-control" />
+            <span asp-validation-for="Stock" class="form-text text-danger"></span>
+        </div>
+        <div class="mt-2">
+            <label asp-for="DescriptionEN" class="form-label"></label>
+            <input asp-for="DescriptionEN" class="form-control" />
+            <span asp-validation-for="DescriptionEN" class="form-text text-danger"></span>
+        </div>
+        <div class="mt-2">
+            <label asp-for="DescriptionAR" class="form-label"></label>
+            <input asp-for="DescriptionAR" class="form-control" />
+            <span asp-validation-for="DescriptionAR" class="form-text text-danger"></span>
+        </div>
+        <div class="mt-2 mb-4">
+            <label asp-for="SubcategoryId" class="form-label"></label>
+            <select asp-for="SubcategoryId" asp-items="subCategList" class="form-control">
+                <option value="">-- Select SubCategory --</option>
+            </select>
+            <span asp-validation-for="SubcategoryId" class="form-text text-danger"></span>
+        </div>
+@*        @if(Model.Image == null)
+        {*@
+        <div class="mt-2 mb-4">
+@*                <label for="Image" class="form-label">Image</label>
+            <input type="file" id="Image" name="Image" class="form-control" accept="image/*" />*@
+            <label asp-for="Image" class="form-label"></label>
+            <input type="file" asp-for="Image" class="form-control" accept="image/*" />
+            <span asp-validation-for="Image" class="text-danger"></span>
+        </div>
+        @*}*@
+@*        else if (Model.Image != null)
+        {*@
+@*            <div class="mt-2 mb-4">
+                <label for="current-image" class="form-label">Current Image:</label>
+                <img src="@Model.Image" id="current-image" width="100" alt="Current Image" class="current-image" />
+            </div>*@
+        @*}*@
+        <button @*onclick="getURL()"*@ class="btn btn-success">Save Changes</button>
+        <a asp-action="allproducts" class="btn btn-secondary ms-2">Cancel</a>
+    </form>
+
+    @*<a asp-action="addNew" class="btn btn-primary mb-3">Add New Product</a>*@
+</div>
+
+@section Scripts{
+    <script>
+        let sideLinks = document.querySelectorAll(".side-nav");
+        sideLinks.forEach(e => e.classList.remove("active"));
+
+        let activeLink = document.getElementById("products");
+        activeLink.classList.add("active");
+
+        function getURL(e) {
+            e.preventDefault();
+        }
+    </script>
+}
+
