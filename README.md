@@ -36,6 +36,12 @@ The back-end is designed using **_[Onion Architecture](https://www.google.com/se
 
 I will add some faetures, change the style, and improve some functionality. You're welcome for any suggested improvements 😃😍
 
+## Hosted Projects
+
+_Check out these 2 projects :_
+
+[Dashboard](http://iti2bstoredashboard.somee.com/) and [2B Website](https://zesty-starlight-bfc4f9.netlify.app/)
+
 ## Code scaffolding
 
 Enter `Frontend_for_main_website` folder and run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.

@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { SubCategoryServiceService } from './sub-category-service.service';
+import { SubCategoryService } from './sub-category.service';
 
 describe('SubCategoryServiceService', () => {
-  let service: SubCategoryServiceService;
+  let service: SubCategoryService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(SubCategoryServiceService);
+    service = TestBed.inject(SubCategoryService);
   });
 
   it('should be created', () => {

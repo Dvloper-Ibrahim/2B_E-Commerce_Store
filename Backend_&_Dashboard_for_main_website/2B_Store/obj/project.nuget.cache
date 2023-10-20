@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QEv8dOhUQplZ7EodQ9P+4iabvrnWEZ3nu66RRjAteyGmxtXEiIO3i/hcm59uJsgkjjCDWdbJvZbuyV3lo/QoLQ==",
+  "dgSpecHash": "a8z8SZCBiJgSIrQHqGWczt8/OmkMRv8efsSIPkLhIIE0M3hYo23Fz5nskOeMfotnr3Ir5as5NuyYAFrNs2rgmw==",
   "success": true,
-  "projectFilePath": "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store\\2B_Store.Domain.csproj",
+  "projectFilePath": "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store\\2B_Store.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\7.0.7\\microsoft.aspnetcore.cryptography.internal.7.0.7.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\7.0.7\\microsoft.aspnetcore.cryptography.keyderivation.7.0.7.nupkg.sha512",

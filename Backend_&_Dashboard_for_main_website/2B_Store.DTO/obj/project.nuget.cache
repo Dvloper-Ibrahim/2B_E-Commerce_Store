@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ISdYSiS6QkWCydbxmIBKiE/EYwzl1ujLw5tn5h1dTOP0II1OsJEUaJJmRI+iBZx0IjCcph+xP+yrvkqaWk+yQw==",
+  "dgSpecHash": "erufjAbQQaVlKzJXYoRcGERRVeritvx0/DRDv7Eieb/LZivXsvsLY/pbHTOGRpAC+9NIItU2krPtOIxGDb/Y/Q==",
   "success": true,
-  "projectFilePath": "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store.DTO\\2B_Store.DTO.csproj",
+  "projectFilePath": "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store.DTO\\2B_Store.DTO.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

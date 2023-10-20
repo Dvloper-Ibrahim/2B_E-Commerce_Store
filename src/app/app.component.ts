@@ -7,6 +7,7 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+  title = '2B_Store';
   constructor(private translateService: TranslateService) {
     this.translateService.setDefaultLang('en');
     const lang = localStorage.getItem('myLang') || 'en';

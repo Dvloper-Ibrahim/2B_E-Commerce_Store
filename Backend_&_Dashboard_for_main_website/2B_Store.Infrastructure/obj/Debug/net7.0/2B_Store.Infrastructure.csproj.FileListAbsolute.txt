@@ -82,3 +82,24 @@ G:\ITI - Graduation Project\Backend_&_Dashboard_for_main_website\2B_Store.Infras
 G:\ITI - Graduation Project\Backend_&_Dashboard_for_main_website\2B_Store.Infrastructure\obj\Debug\net7.0\refint\2B_Store.Infrastructure.dll
 G:\ITI - Graduation Project\Backend_&_Dashboard_for_main_website\2B_Store.Infrastructure\obj\Debug\net7.0\2B_Store.Infrastructure.pdb
 G:\ITI - Graduation Project\Backend_&_Dashboard_for_main_website\2B_Store.Infrastructure\obj\Debug\net7.0\ref\2B_Store.Infrastructure.dll
+G:\2B_E-Commerce_Store\Backend_&_Dashboard_for_main_website\2B_Store.Infrastructure\bin\Debug\net7.0\2B_Store.Infrastructure.deps.json
+G:\2B_E-Commerce_Store\Backend_&_Dashboard_for_main_website\2B_Store.Infrastructure\bin\Debug\net7.0\2B_Store.Infrastructure.dll
+G:\2B_E-Commerce_Store\Backend_&_Dashboard_for_main_website\2B_Store.Infrastructure\bin\Debug\net7.0\2B_Store.Infrastructure.pdb
+G:\2B_E-Commerce_Store\Backend_&_Dashboard_for_main_website\2B_Store.Infrastructure\bin\Debug\net7.0\2B_Store.Application.dll
+G:\2B_E-Commerce_Store\Backend_&_Dashboard_for_main_website\2B_Store.Infrastructure\bin\Debug\net7.0\2B_Store.Context.dll
+G:\2B_E-Commerce_Store\Backend_&_Dashboard_for_main_website\2B_Store.Infrastructure\bin\Debug\net7.0\2B_Store.Domain.dll
+G:\2B_E-Commerce_Store\Backend_&_Dashboard_for_main_website\2B_Store.Infrastructure\bin\Debug\net7.0\2B_Store.DTO.dll
+G:\2B_E-Commerce_Store\Backend_&_Dashboard_for_main_website\2B_Store.Infrastructure\bin\Debug\net7.0\2B_Store.Application.pdb
+G:\2B_E-Commerce_Store\Backend_&_Dashboard_for_main_website\2B_Store.Infrastructure\bin\Debug\net7.0\2B_Store.Context.pdb
+G:\2B_E-Commerce_Store\Backend_&_Dashboard_for_main_website\2B_Store.Infrastructure\bin\Debug\net7.0\2B_Store.Domain.pdb
+G:\2B_E-Commerce_Store\Backend_&_Dashboard_for_main_website\2B_Store.Infrastructure\bin\Debug\net7.0\2B_Store.DTO.pdb
+G:\2B_E-Commerce_Store\Backend_&_Dashboard_for_main_website\2B_Store.Infrastructure\obj\Debug\net7.0\2B_Store.Infrastructure.csproj.AssemblyReference.cache
+G:\2B_E-Commerce_Store\Backend_&_Dashboard_for_main_website\2B_Store.Infrastructure\obj\Debug\net7.0\2B_Store.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+G:\2B_E-Commerce_Store\Backend_&_Dashboard_for_main_website\2B_Store.Infrastructure\obj\Debug\net7.0\2B_Store.Infrastructure.AssemblyInfoInputs.cache
+G:\2B_E-Commerce_Store\Backend_&_Dashboard_for_main_website\2B_Store.Infrastructure\obj\Debug\net7.0\2B_Store.Infrastructure.AssemblyInfo.cs
+G:\2B_E-Commerce_Store\Backend_&_Dashboard_for_main_website\2B_Store.Infrastructure\obj\Debug\net7.0\2B_Store.Infrastructure.csproj.CoreCompileInputs.cache
+G:\2B_E-Commerce_Store\Backend_&_Dashboard_for_main_website\2B_Store.Infrastructure\obj\Debug\net7.0\2B_Store.Infrastructure.csproj.CopyComplete
+G:\2B_E-Commerce_Store\Backend_&_Dashboard_for_main_website\2B_Store.Infrastructure\obj\Debug\net7.0\2B_Store.Infrastructure.dll
+G:\2B_E-Commerce_Store\Backend_&_Dashboard_for_main_website\2B_Store.Infrastructure\obj\Debug\net7.0\refint\2B_Store.Infrastructure.dll
+G:\2B_E-Commerce_Store\Backend_&_Dashboard_for_main_website\2B_Store.Infrastructure\obj\Debug\net7.0\2B_Store.Infrastructure.pdb
+G:\2B_E-Commerce_Store\Backend_&_Dashboard_for_main_website\2B_Store.Infrastructure\obj\Debug\net7.0\ref\2B_Store.Infrastructure.dll

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "O1eGK1znobeREJC0SV8v9VnfSaWpG1MSH/gXR1ytr/a+o5XhK8HsqRU/buRK0f2DRl4ZPYQa+g3uMNV9uQG53g==",
+  "dgSpecHash": "YGDmgd4xO5EYFUQWZ4kWxXijTpOHf4S3HDwtKLH+b2e6bRfIIj7Y3oup0V3596z6y4JADKk6B8MEuz6BNIwZxg==",
   "success": true,
-  "projectFilePath": "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store.MVC\\2B_Store.MVC.csproj",
+  "projectFilePath": "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store.MVC\\2B_Store.MVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DELL\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

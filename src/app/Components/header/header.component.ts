@@ -15,7 +15,7 @@ import jwtDecode from 'jwt-decode';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
-  localLang: string = "";
+  localLang: string = '';
   token: string | null = localStorage.getItem('_2B_User');
   currentUser = {} as DecodedJWT | null;
   isAuthorized: boolean = false;
@@ -54,9 +54,13 @@ export class HeaderComponent implements OnInit {
     const cartDetails = document.querySelector('.dropdown-div');
     const detailsArrow = document.querySelector('.dropdown-arrow');
 
-    if (cartDetails?.classList.contains('active') && detailsArrow?.classList.contains('active')) {
+    if (
+      cartDetails?.classList.contains('active') &&
+      detailsArrow?.classList.contains('active')
+    ) {
       const clickedElement = event.target as HTMLElement;
-      const isCartElement = clickedElement.classList.contains('cart') ||
+      const isCartElement =
+        clickedElement.classList.contains('cart') ||
         clickedElement.classList.contains('items-num') ||
         clickedElement.classList.contains('fa-cart-plus');
 
@@ -80,13 +84,18 @@ export class HeaderComponent implements OnInit {
   searchQuery: string = '';
   cartItems: IProduct[] = [];
   total: number = 0;
-  totalOfOrder:number=0;
-  constructor(private productApiPages: ProductsPagesService ,
-     private router: Router,private cartService: CartService,private route: ActivatedRoute,
-     private userService:UserService, private authService:AuthService){}
+  totalOfOrder: number = 0;
+  constructor(
+    private productApiPages: ProductsPagesService,
+    private router: Router,
+    private cartService: CartService,
+    private route: ActivatedRoute,
+    private userService: UserService,
+    private authService: AuthService
+  ) {}
 
   ngOnInit(): void {
-    this.localLang = localStorage.getItem('myLang') || "en";
+    this.localLang = localStorage.getItem('myLang') || 'en';
     this.cartItems = this.cartService.getCartItemsWithQuantities();
     this.totalOfOrder = this.calculateTotalQuantities();
     this.route.queryParams.subscribe((params) => {
@@ -95,31 +104,32 @@ export class HeaderComponent implements OnInit {
     this.isAuthorized = this.authService.isAuthenticated();
     this.currentUser = !!this.token ? jwtDecode(this.token) : null;
   }
-calculateTotalQuantities(): number {
-  return this.cartItems.reduce((total, item) => total + item.quantity, 0);
-}
+  calculateTotalQuantities(): number {
+    return this.cartItems.reduce((total, item) => total + item.quantity, 0);
+  }
 
   setSearch(e: Event) {
     this.searchResults = [];
     let input = e.target as HTMLInputElement;
 
     this.productApiPages.searchFor(input.value)?.subscribe({
-      next: data => {
-        data.forEach(item => {
-          item.name = this.localLang == 'ar' ? item.productNameAR : item.descriptionEN
-          this.searchResults.push(item.name.slice(0,30) + " ...");
-          this.searchResults = this.searchResults.slice(0, 10)
-        })
+      next: (data) => {
+        data.forEach((item) => {
+          item.name =
+            this.localLang == 'ar' ? item.productNameAR : item.descriptionEN;
+          this.searchResults.push(item.name.slice(0, 30) + ' ...');
+          this.searchResults = this.searchResults.slice(0, 10);
+        });
       },
-      error:err => console.log(err)
-    })
+      error: (err) => console.log(err),
+    });
   }
 
-search(): void {
-  if (this.searchQuery.trim() !== '') {
-    this.searchResults = [];
-    console.log(this.searchQuery);
-    this.router.navigate(['home/searchResult'], {
+  search(): void {
+    if (this.searchQuery.trim() !== '') {
+      this.searchResults = [];
+      console.log(this.searchQuery);
+      this.router.navigate(['home/searchResult'], {
         queryParams: { query: this.searchQuery },
       });
       // location.assign(`/home/searchResult?query=${this.searchQuery}`)
@@ -129,22 +139,22 @@ search(): void {
   goToSearch(eve: Event, result: string) {
     let resultElement = eve.target as HTMLElement;
     let input = resultElement.parentElement
-    ?.previousElementSibling as HTMLInputElement;
+      ?.previousElementSibling as HTMLInputElement;
     result = result.slice(0, -4);
     // console.log(result);
     input.value = result;
     this.searchQuery = result;
     this.searchResults = [];
-  // console.log(this.searchQuery);
+    // console.log(this.searchQuery);
   }
 
-  toggleLanguage(){
-    this.localLang == "en" ?
-    localStorage.setItem("myLang", "ar") :
-    localStorage.setItem("myLang", "en");
+  toggleLanguage() {
+    this.localLang == 'en'
+      ? localStorage.setItem('myLang', 'ar')
+      : localStorage.setItem('myLang', 'en');
 
     // console.log(localStorage.getItem("myLang"));
-    location.reload();
+    location.assign('/home');
   }
 
   toggleMenu() {

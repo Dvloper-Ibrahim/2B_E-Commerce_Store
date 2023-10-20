@@ -23,7 +23,7 @@ export class AuthService {
     return !!token && !this.isTokenExpired(token);
   }
 
-  isTokenExpired(token: string | null): boolean {
+  private isTokenExpired(token: string | null): boolean {
     if (!token) return true;
     else {
       const decodedToken: DecodedJWT = jwtDecode(token);
@@ -34,7 +34,7 @@ export class AuthService {
     }
   }
 
-  getToken(): string | null {
+  private getToken(): string | null {
     return localStorage.getItem(this.tokenKey);
   }
 }

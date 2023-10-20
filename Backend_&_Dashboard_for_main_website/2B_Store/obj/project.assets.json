@@ -1090,11 +1090,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store\\2B_Store.Domain.csproj",
+      "projectUniqueName": "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store\\2B_Store.Domain.csproj",
       "projectName": "2B_Store.Domain",
-      "projectPath": "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store\\2B_Store.Domain.csproj",
+      "projectPath": "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store\\2B_Store.Domain.csproj",
       "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store\\obj\\",
+      "outputPath": "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",

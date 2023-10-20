@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zb0V9KnAazZJp3bBAHcm5289ACV9iBbianJWnre6Rl+5WNqblR3cY6XICXqE2GVGRCOd1wIduYm9AKk9TpEufA==",
+  "dgSpecHash": "l+pNbhKYc1n8/P3I2BPYecrX3IDDA716HKsTw0GbCXXb05W8tHWeUec9s+ME1jgNrip9qMPaEvVeLSdAz64MYA==",
   "success": true,
-  "projectFilePath": "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store.Application11\\2B_Store.Application.csproj",
+  "projectFilePath": "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store.Application11\\2B_Store.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DELL\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",

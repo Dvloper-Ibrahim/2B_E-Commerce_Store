@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jiAmuR6WYrLxGkO2huFSu5cW3a9PPhVZDl70kOQdWCIqeKyFODzPNLyv0CCdo7sXe+VWRi4cfHtDx7/+zkzT2Q==",
+  "dgSpecHash": "wxmWcYcOKPHbbGPmOhs4X5WPEuRaaELqJC3C0KMlzXmSg6pckkMrm4hRwnbmv8+4TU/dYyN1k8te5mDvF74bCg==",
   "success": true,
-  "projectFilePath": "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store.Infrastructure\\2B_Store.Infrastructure.csproj",
+  "projectFilePath": "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store.Infrastructure\\2B_Store.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DELL\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",

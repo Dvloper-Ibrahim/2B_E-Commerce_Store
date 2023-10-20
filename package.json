@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod",
     "my-build": "ng build --output-path docs --base-href /2B_E-Commerce_Store/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
@@ -43,6 +43,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "source-map-explorer": "^2.5.3",
     "typescript": "~5.1.3"
   }
 }

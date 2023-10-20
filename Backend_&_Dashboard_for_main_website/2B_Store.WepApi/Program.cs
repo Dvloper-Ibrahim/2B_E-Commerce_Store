@@ -26,7 +26,7 @@ namespace _2B_Store.WepApi
             {
                 options.AddDefaultPolicy(builder =>
                 {
-                    builder.AllowAnyHeader().AllowAnyMethod()/*.AllowAnyOrigin(); //*/.WithOrigins("http://localhost:4200", "http://localhost:53468");
+                    builder.AllowAnyHeader().AllowAnyMethod()/*.AllowAnyOrigin(); //*/.WithOrigins("http://localhost:4200", "https://zesty-starlight-bfc4f9.netlify.app");
                 });
             });
 
@@ -72,6 +72,8 @@ namespace _2B_Store.WepApi
             builder.Services.AddScoped<IReviewRepository, ReviewRepository>();
             builder.Services.AddScoped<IShippingRepository, ShippingRepository>();
             builder.Services.AddScoped<IPaymentRepository, PaymentRepository>();
+
+
 
             builder.Services.AddScoped<ICategoryServices, CategoryServices>();
             builder.Services.AddScoped<ISubCategoryServices, SubCategoryServices>();

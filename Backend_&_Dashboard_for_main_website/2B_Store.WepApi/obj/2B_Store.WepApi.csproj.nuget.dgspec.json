@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store.WepApi\\2B_Store.WepApi.csproj": {}
+    "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store.WepApi\\2B_Store.WepApi.csproj": {}
   },
   "projects": {
-    "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store.Application11\\2B_Store.Application.csproj": {
+    "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store.Application11\\2B_Store.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store.Application11\\2B_Store.Application.csproj",
+        "projectUniqueName": "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store.Application11\\2B_Store.Application.csproj",
         "projectName": "2B_Store.Application",
-        "projectPath": "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store.Application11\\2B_Store.Application.csproj",
+        "projectPath": "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store.Application11\\2B_Store.Application.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store.Application11\\obj\\",
+        "outputPath": "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store.Application11\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store.DTO\\2B_Store.DTO.csproj": {
-                "projectPath": "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store.DTO\\2B_Store.DTO.csproj"
+              "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store.DTO\\2B_Store.DTO.csproj": {
+                "projectPath": "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store.DTO\\2B_Store.DTO.csproj"
               },
-              "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store\\2B_Store.Domain.csproj": {
-                "projectPath": "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store\\2B_Store.Domain.csproj"
+              "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store\\2B_Store.Domain.csproj": {
+                "projectPath": "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store\\2B_Store.Domain.csproj"
               }
             }
           }
@@ -72,14 +72,14 @@
         }
       }
     },
-    "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store.Context\\2B_Store.Context.csproj": {
+    "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store.Context\\2B_Store.Context.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store.Context\\2B_Store.Context.csproj",
+        "projectUniqueName": "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store.Context\\2B_Store.Context.csproj",
         "projectName": "2B_Store.Context",
-        "projectPath": "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store.Context\\2B_Store.Context.csproj",
+        "projectPath": "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store.Context\\2B_Store.Context.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store.Context\\obj\\",
+        "outputPath": "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store.Context\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -96,8 +96,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store\\2B_Store.Domain.csproj": {
-                "projectPath": "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store\\2B_Store.Domain.csproj"
+              "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store\\2B_Store.Domain.csproj": {
+                "projectPath": "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store\\2B_Store.Domain.csproj"
               }
             }
           }
@@ -153,14 +153,14 @@
         }
       }
     },
-    "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store.DTO\\2B_Store.DTO.csproj": {
+    "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store.DTO\\2B_Store.DTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store.DTO\\2B_Store.DTO.csproj",
+        "projectUniqueName": "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store.DTO\\2B_Store.DTO.csproj",
         "projectName": "2B_Store.DTO",
-        "projectPath": "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store.DTO\\2B_Store.DTO.csproj",
+        "projectPath": "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store.DTO\\2B_Store.DTO.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store.DTO\\obj\\",
+        "outputPath": "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store.DTO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -177,8 +177,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store\\2B_Store.Domain.csproj": {
-                "projectPath": "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store\\2B_Store.Domain.csproj"
+              "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store\\2B_Store.Domain.csproj": {
+                "projectPath": "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store\\2B_Store.Domain.csproj"
               }
             }
           }
@@ -218,14 +218,14 @@
         }
       }
     },
-    "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store.Infrastructure\\2B_Store.Infrastructure.csproj": {
+    "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store.Infrastructure\\2B_Store.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store.Infrastructure\\2B_Store.Infrastructure.csproj",
+        "projectUniqueName": "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store.Infrastructure\\2B_Store.Infrastructure.csproj",
         "projectName": "2B_Store.Infrastructure",
-        "projectPath": "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store.Infrastructure\\2B_Store.Infrastructure.csproj",
+        "projectPath": "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store.Infrastructure\\2B_Store.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store.Infrastructure\\obj\\",
+        "outputPath": "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -242,14 +242,14 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store.Application11\\2B_Store.Application.csproj": {
-                "projectPath": "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store.Application11\\2B_Store.Application.csproj"
+              "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store.Application11\\2B_Store.Application.csproj": {
+                "projectPath": "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store.Application11\\2B_Store.Application.csproj"
               },
-              "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store.Context\\2B_Store.Context.csproj": {
-                "projectPath": "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store.Context\\2B_Store.Context.csproj"
+              "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store.Context\\2B_Store.Context.csproj": {
+                "projectPath": "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store.Context\\2B_Store.Context.csproj"
               },
-              "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store\\2B_Store.Domain.csproj": {
-                "projectPath": "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store\\2B_Store.Domain.csproj"
+              "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store\\2B_Store.Domain.csproj": {
+                "projectPath": "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store\\2B_Store.Domain.csproj"
               }
             }
           }
@@ -289,14 +289,14 @@
         }
       }
     },
-    "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store.WepApi\\2B_Store.WepApi.csproj": {
+    "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store.WepApi\\2B_Store.WepApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store.WepApi\\2B_Store.WepApi.csproj",
+        "projectUniqueName": "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store.WepApi\\2B_Store.WepApi.csproj",
         "projectName": "2B_Store.WepApi",
-        "projectPath": "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store.WepApi\\2B_Store.WepApi.csproj",
+        "projectPath": "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store.WepApi\\2B_Store.WepApi.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store.WepApi\\obj\\",
+        "outputPath": "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store.WepApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -313,17 +313,17 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store.Application11\\2B_Store.Application.csproj": {
-                "projectPath": "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store.Application11\\2B_Store.Application.csproj"
+              "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store.Application11\\2B_Store.Application.csproj": {
+                "projectPath": "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store.Application11\\2B_Store.Application.csproj"
               },
-              "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store.Context\\2B_Store.Context.csproj": {
-                "projectPath": "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store.Context\\2B_Store.Context.csproj"
+              "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store.Context\\2B_Store.Context.csproj": {
+                "projectPath": "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store.Context\\2B_Store.Context.csproj"
               },
-              "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store.DTO\\2B_Store.DTO.csproj": {
-                "projectPath": "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store.DTO\\2B_Store.DTO.csproj"
+              "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store.DTO\\2B_Store.DTO.csproj": {
+                "projectPath": "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store.DTO\\2B_Store.DTO.csproj"
               },
-              "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store.Infrastructure\\2B_Store.Infrastructure.csproj": {
-                "projectPath": "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store.Infrastructure\\2B_Store.Infrastructure.csproj"
+              "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store.Infrastructure\\2B_Store.Infrastructure.csproj": {
+                "projectPath": "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store.Infrastructure\\2B_Store.Infrastructure.csproj"
               }
             }
           }
@@ -388,14 +388,14 @@
         }
       }
     },
-    "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store\\2B_Store.Domain.csproj": {
+    "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store\\2B_Store.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store\\2B_Store.Domain.csproj",
+        "projectUniqueName": "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store\\2B_Store.Domain.csproj",
         "projectName": "2B_Store.Domain",
-        "projectPath": "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store\\2B_Store.Domain.csproj",
+        "projectPath": "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store\\2B_Store.Domain.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "G:\\ITI - Graduation Project\\Backend_&_Dashboard_for_main_website\\2B_Store\\obj\\",
+        "outputPath": "G:\\2B_E-Commerce_Store\\Backend_&_Dashboard_for_main_website\\2B_Store\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
