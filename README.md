@@ -42,6 +42,8 @@ _Check out these 2 projects :_
 
 [Dashboard](http://iti2bstoredashboard.somee.com/) and [2B Website](https://zesty-starlight-bfc4f9.netlify.app/)
 
+**Note :** when you open the dashboard, you'll find a login form. Use the data of admin or sup*admin in this file `Backend*&\_Dashboard_for_main_website/users data.txt`. It will not login with customer data.
+
 ## Code scaffolding
 
 Enter `Frontend_for_main_website` folder and run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
